@@ -1,0 +1,45 @@
+<extend name="Index/index" />
+
+<block name="content">	
+<div class="col-md-12 graphs">
+  <div class="xs">
+  	<h3>招聘信息</h3>
+	<a href="__URL__/form" class="btn fb1" style="color:white;">添加招聘</a>
+    <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		<div class="panel-body no-padding">
+			<table class="table table-striped">
+				<thead>
+					<tr class="warning">
+						<th>工作岗位</th>
+						<th>职位类别</th>
+						<th>工作地点</th>
+						<th>招聘人数</th>
+						<th>发布时间</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="recruit_list" item="recruit">
+					<tr>
+						 <td>{$recruit[recruit_name]}</td>
+						 <td>{$recruit[job]}</td>
+						 <td>{$recruit[place]}</td>
+						 <td>{$recruit[number]}</td>
+						 <td>{:date('Y-m-d H:i:s',$recruit['add_time'])}</td>
+						 <td>
+						  <a href="__URL__/form/id/{$recruit[recruit_id]}">编辑</a>
+						  <a href="__URL__/delete/id/{$recruit[recruit_id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+						 </td>
+					</tr>
+					</foreach>
+					
+				</tbody>
+			</table>
+		</div>
+		 <ul class="pagination">
+			{$page}
+		 </ul>
+	</div>
+  </div>
+</div>
+</block>

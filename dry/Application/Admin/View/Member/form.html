@@ -1,0 +1,89 @@
+<extend name="Index/index" />
+
+<block name="content">
+
+	<div class="bs-example1" data-example-id="contextual-table">	
+	<form action="__CONTROLLER__/{$action}" enctype="multipart/form-data" method="post">
+	<table class="table">
+	  <thead>	  
+		<tr>
+			<eq name="action" value="add">
+			<h3>添加会员</h3>
+			</eq>
+			<eq name="action" value="update">
+			<h3>修改会员信息</h3>
+			</eq>
+		</tr>
+	  </thead>
+	  <tbody>
+		<!-- <tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">会员账号</span>
+            <input type="text" class="form-control" name="member_phone" placeholder="请输入手机号" value="{$member_one.member_phone}">
+          </div>
+		</tr> -->
+		<!-- <tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">会员名</span>
+            <input type="text" class="form-control" name="member_name" placeholder="请输入会员名称" value="{$member_one.member_name}">
+          </div>
+		</tr> -->
+		<!-- <tr>
+		  <div class="input-group">
+            <span class="input-group-addon">上一级</span>
+            <select class="form-control" name="parent_id">
+			  <foreach name="member_list" item="member">
+			  <eq name="member[member_id]" value="$member_one[parent_id]">
+			  <option value="{$member[member_id]}">{$member[parent_id]}</option>
+			  </eq>
+			  </foreach>
+			  <option value="0">顶级</option>	
+			  <foreach name="member_list" item="member">
+			  <option value="{$member[member_id]}"><for start="0" end="$member['level']">&nbsp;&nbsp;&nbsp;&nbsp;</for>{$member[member_phone]}</option>
+			  </foreach>			  
+			</select>
+          </div>
+		</tr> -->
+		<!-- <tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">会员密码</span>
+            <input type="password" class="form-control" name="member_password" placeholder="请输入会员密码" value="{$member_one.member_password}">
+          </div>
+		</tr> -->
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">是否是代理</span>            
+          </div>
+		  <div class="radio">
+				<label>
+					<input type="radio" name="is_open" value="0" <eq name="member_one[is_open]" value="0">checked</eq> <eq name="member_one[is_open]" value="">checked</eq>>否
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="is_open" value="1" <eq name="member_one[is_open]" value="1">checked</eq>>是
+				</label>
+			</div>
+		</tr>
+		<!-- <tr class="col-sm-6 col-md-3">		  
+		  <div class="input-group">
+            <span class="input-group-addon">二维码</span>            
+          </div>
+		  <td>
+		  <div class="form-group">
+		  <img src="__ROOT__/{$member_one.code_img}" width="" height="">
+		  </div>				  
+		  </td>
+		</tr> -->		
+		<tr>
+		  <input type="hidden" name="action" value="{$action}"/>
+		  <input type="hidden" name="member_id" value="{$member_one.member_id}"/>
+		  <td><button type="submit" class="btn btn-primary">提交</button></td>
+		</tr>
+	  </tbody>
+	</table>
+	</form>
+	</div> 
+
+</block>
+

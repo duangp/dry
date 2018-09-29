@@ -1,0 +1,2406 @@
+<include file="Common/header"/>
+<eq name="plate_id" value="21">
+<link rel="stylesheet" href="__PUBLIC__/home/css/building.css" />
+	<div id="building">
+		<foreach name="images_list" item="image">			
+		<eq name="image.plate_id" value="21">
+		<div class="con_banner">		
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}" alt="" />
+			</foreach>			
+			<div class="_banner-text ">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<div class="bu_describ">
+			<foreach name="plate_all" item="pla">			
+			<eq name="pla.plate_id" value="143">
+			<?php echo htmlspecialchars_decode($pla['customized-buttonpane']);?>
+			</eq>
+			</foreach>
+		</div>
+		
+		<div class="content">
+			<div class="building_items mui-row">
+				<ul class="left mui-col-60">
+					<foreach name="images_list" item="image">			
+					<eq name="image.plate_id" value="132">
+					<li class="li_pop">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>	
+						<!--悬浮框-->
+						<div class="build_pop popHeight ">
+							<div class="pop_describ">
+								<h3>{$image.plate_name}</h3>
+								<p class="pop_text">
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+						</div>
+					</li>
+					</eq>
+					</foreach>
+					<li>
+						<foreach name="images_list" item="image">
+						<div class="small-img">							
+							<eq name="image.plate_id" value="133">
+							<div class="left li_pop s_img">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+								<!--悬浮框-->
+								<div class="build_pop popHeight ">
+									<div class="pop_describ">
+										<h3>{$image.plate_name}</h3>
+										<p class="pop_text">
+											{$image.introduce}
+										</p>
+										<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+									</div>
+								</div>
+							</div>
+							</eq>
+							<eq name="image.plate_id" value="134">
+							<div class="right li_pop s_img">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+								<!--悬浮框-->
+								<div class="build_pop popHeight ">
+									<div class="pop_describ">
+										<h3>{$image.plate_name}</h3>
+										<p class="pop_text">
+											{$image.introduce}
+										</p>
+										<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+									</div>
+								</div>
+							</div>
+							</eq>							
+						</div>
+						</foreach>
+					</li>
+					<foreach name="images_list" item="image">			
+					<eq name="image.plate_id" value="135">
+					<li class="li_pop">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<!--悬浮框-->
+						<div class="build_pop popHeight ">
+							<div class="pop_describ">
+								<h3>{$image.plate_name}</h3>
+								<p class="pop_text">
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+						</div>
+					</li>
+					</eq>
+					</foreach>
+				</ul>
+				<ul class="right mui-col-39">
+					<foreach name="images_list" item="image">			
+					<in name="image.plate_id" value="136,137">
+					<li class="li_pop">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<!--悬浮框-->
+						<div class="build_pop popHeight ">
+							<div class="pop_describ">
+								<h3>{$image.plate_name}</h3>
+								<p class="pop_text">
+									<!--<p class="build-t">{$image.introduce}</p>-->
+									<!--修改内容-->
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+						</div>
+					</li>
+					</in>
+					</foreach>
+					<li class="build-text">
+						<foreach name="plate_all" item="pla">
+						<eq name="pla.plate_id" value="138">
+						<p class="build-t">{$pla.introduce}</p>
+						</eq>
+						</foreach>
+					</li>
+				</ul>
+			</div>
+			<div class="building_items mui-row">
+				<ul class="left mui-col-39">
+					<foreach name="images_list" item="image">
+					<eq name="image.plate_id" value="139">
+					<li class="li_pop">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<!--悬浮框-->
+						<div class="build_pop popHeight ">
+							<div class="pop_describ">
+								<h3>{$image.plate_name}</h3>
+								<p class="pop_text">
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+						</div>
+					</li>
+					</eq>
+					</foreach>
+					<foreach name="plate_all" item="pla">
+					<eq name="pla.plate_id" value="142">
+					<li class="build-text padding-134">
+						<p class="build-t">{$pla.introduce}</p>
+					</eq>
+					</foreach>
+				</ul> 
+				<ul class="right mui-col-60">
+					<foreach name="images_list" item="image">
+					<eq name="image.plate_id" value="140">				
+					<li class="li_pop">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<!--悬浮框-->
+						<div class="build_pop popHeight ">
+							<div class="pop_describ">
+								<h3>{$image.plate_name}</h3>
+								<p class="pop_text">
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+						</div>
+					</li>
+					</eq>
+					</foreach>
+					<li>
+						<div class="small-img ">						
+							<foreach name="images_list" item="image">
+							<eq name="image.plate_id" value="144">
+							<div class="left li_pop s_img">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+								<!--悬浮框-->
+								<div class="build_pop popHeight ">
+									<div class="pop_describ">
+										<h3>{$image.plate_name}</h3>
+										<p class="pop_text">
+											{$image.introduce}
+										</p>
+										<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+									</div>
+								</div>
+							</div>
+							</eq>
+							<eq name="image.plate_id" value="141">
+							<div class="right li_pop s_img">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+								<!--悬浮框-->
+								<div class="build_pop popHeight ">
+									<div class="pop_describ">
+										<h3>{$image.plate_name}</h3>
+										<p class="pop_text">
+											{$image.introduce}
+										</p>
+										<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+									</div>
+								</div>
+							</div>
+							</eq>
+							</foreach>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript">
+		//修改内容
+		$('.li_pop img').hover(function(){
+			 var popHeight=$(this).height();
+			$('.popHeight').css('height',popHeight+'px');		
+		})
+	</script>
+</eq>	
+<eq name="plate_id" value="49">
+<link rel="stylesheet" href="__PUBLIC__/home/css/product.css" />
+	<div id="product">		
+		<div class="_banner">
+			<foreach name="images_list" item="image">			
+			<eq name="image.plate_id" value="53">			
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}" alt="" />
+			</foreach>
+			</eq>
+			</foreach>
+		</div>
+		<p class="pr_text">
+			<foreach name="images_list" item="image">
+			<eq name="image.plate_id" value="53">
+			<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</eq>
+			</foreach>
+		</p>
+		<div class="content">
+			<ul class="ding mui-row">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="55">
+				<foreach name="image['child']" item="child">
+				<a href="{$image.plate_id}">
+					<span class="mui-icon point"><img src="__PUBLIC__/home/img/ding.png" alt="" /></span>
+					<li>
+						<img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" />
+						<p class="pro_name">{$image.plate_name}</p>
+					</li>
+				</a>
+				</foreach>
+				</eq>
+				</foreach>
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="56">
+				<foreach name="image['child']" item="child">
+				<a href="{$image.plate_id}">
+					<span class="mui-icon point"><img src="__PUBLIC__/home/img/ding.png" alt="" /></span>
+					<li>
+						<img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" />
+						<p class="pro_name">{$image.plate_name}</p>
+					</li>
+				</a>
+				</foreach>
+				</eq>
+				</foreach>								
+			</ul>
+			<div class="pro_item pHeight">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="57">
+				<foreach name="image['child']" item="child">
+				<a href="{$image.plate_id}">
+					<p class="left">
+						<img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" />
+					</p>
+					<p class="pro_name right left-30">{$image.plate_name}</p>
+				</a>
+				</foreach>				
+				</eq>
+				</foreach>
+			</div>
+			<div class="pro_item pHeight">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="58">
+				<foreach name="image['child']" item="child">
+				<a href="{$image.plate_id}">
+					<p class="right">
+						<img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" />
+					</p>
+					<p class="pro_name left right-35 top-46">{$image.plate_name}</p>
+				</a>
+				</foreach>				
+				</eq>
+				</foreach>
+			</div>
+			<div class="pro_item pHeight">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="59">
+				<foreach name="image['child']" item="child">
+				<a href="{$image.plate_id}">
+					<p class="left">
+						<img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" />
+					</p>
+					<p class="pro_name right left-30">{$image.plate_name}</p>
+				</a>
+				</foreach>				
+				</eq>
+				</foreach>
+			</div>
+			<div class="pro_item pHeight margin-top-180">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="60">
+				<a href="{$image.plate_id}">
+					<foreach name="image['child']" item="child">	
+					<eq name="child.img_desc" value="1">
+					<p class="left po_ab width-45"><img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" /></p>
+					</eq>
+					<eq name="child.img_desc" value="2">
+					<p class="right po_ab right-16 width-45"><img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" /></p>
+					</eq>
+					</foreach>
+					<p class="pro_name right left-30 top-34">{$image.plate_name}</p>
+				</a>
+				</eq>
+				</foreach>
+			</div> 
+			<ul class="list lHeight">
+				<foreach name="images_list" item="image">
+				<in name="image.plate_id" value="61,62,63,71">				
+				<a href="{$image.plate_id}" class="lHeight">
+					<span class="mui-icon point"><img src="__PUBLIC__/home/img/ding.png" alt="" /></span>
+					<li>
+						<foreach name="image['child']" item="child">
+						<img class="img_filter" src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<p class="pro_name">{$image.plate_name}</p>
+					</li>
+				</a>				
+				</in>
+				</foreach>				
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var pHeight=$('.pro_item p img').height();
+			$('.pHeight').css('height',pHeight+'px');
+			var lHeight=$('.list a li').height();
+			$('.lHeight').css('height',lHeight+'px');
+		})
+	</script>
+</eq>	
+<eq name="plate_id" value="52">
+<link rel="stylesheet" href="__PUBLIC__/home/css/photograhy.css" />
+	<div id="photograhy">		
+		<foreach name="images_list" item="image">
+		<eq name="image.plate_id" value="66">
+		<foreach name="image['child']" item="child">
+		<div class="_banner"><img src="__ROOT__/{$child.img_url}" alt="" /></div>
+		</foreach>
+		<p class="title-text">
+			{$image.introduce}
+		</p>
+		</eq>
+		</foreach>
+		<div class="content ph_content">
+			<ul class="tab_menu width-800 margin-124" >
+				<foreach name="images_list" item="image">
+				<eq name="image.pp_id" value="52">
+				<eq name="image.plate_id" value="66">
+				<li class="<eq name="plate_id" value="52">active</eq> width-20"><a href="__CONTROLLER__/index/id/52">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>
+				</eq>
+				</eq>
+				</foreach>
+			</ul>
+			<div class="tab-content width-100">
+				<div class="item photograhy">
+					<ul class="mui-row ">
+						<foreach name="images_list" item="image">
+						<eq name="image.plate_id" value="67">
+						<li>
+							<div class="ph_text left">
+								<p>{$image.introduce}</p>
+								<span class="ph_china">{$image.plate_name}</span>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+							<div class="ph_img right">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+							</div>
+						</li>
+						</eq>
+						</foreach>
+						<foreach name="images_list" item="image">
+						<eq name="image.plate_id" value="68">
+						<li>
+							<div class="ph_text right">
+								<p>{$image.introduce}</p>
+								<span class="ph_china">{$image.plate_name}</span>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+							<div class="ph_img left">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+							</div>
+						</li>
+						</eq>
+						</foreach>
+						<foreach name="images_list" item="image">
+						<eq name="image.plate_id" value="69">
+						<li>
+							<div class="ph_text left">
+								<p>{$image.introduce}</p>							
+								<span class="ph_china">{$image.plate_name}</span>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+							<div class="ph_img right">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+							</div>
+						</li>
+						</eq>
+						</foreach>
+						<foreach name="images_list" item="image">
+						<eq name="image.plate_id" value="70">
+						<li>
+							<div class="ph_text right">
+								<p>{$image.introduce}</p>							
+								<span class="ph_china">{$image.plate_name}</span>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">查看详情</a>
+							</div>
+							<div class="ph_img left">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+							</div>
+						</li>
+						</eq>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).ready(function(){
+			$('.photograhy ul li').hover(function(){
+				$(this).addClass('h_active');
+			},function(){
+				$(this).removeClass('h_active');
+			})
+		})
+	</script>
+</eq>
+<eq name="plate_id" value="50">
+<link rel="stylesheet" href="__PUBLIC__/home/css/website.css" />
+		<div id="website">
+		<foreach name="images_list" item="image">
+		<eq name="image.plate_id" value="72">		
+		<div class="_banner">
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}" alt="" />
+			</foreach>
+			<div class="_banner-text">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>		
+		<p class="title-text">
+			{$image.introduce}
+		</p>
+		</eq>
+		</foreach>
+		<div class="content">
+			<div class="work_show">
+				<div class="mui-row">
+					<foreach name="images_list" item="image">
+					<in name="image.plate_id" value="73,74">
+					<div class="mui-col-lg-6 mui-col-md-6 mui-col-sm-6 work">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<div class="pHeight _pHeight">
+							<h4 class="work_name">{$image.plate_name}</h4>
+							<a class="work_describ" href="#">{$image.introduce}</a>
+						</div>
+					</div>	
+					</in>
+					</foreach>
+				</div>
+				<div class="mui-row">
+					<foreach name="images_list" item="image">
+					<in name="image.plate_id" value="75,76,77,78">
+					<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 work">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						<div class="pHeight _pHeight">
+							<h4 class="work_name">{$image.plate_name}</h4>
+							<a class="work_describ" href="{$image.plate_id}">{$image.introduce}</a>
+						</div>
+					</div>
+					</in>
+					</foreach>
+				</div>			
+			</div>
+			<div class="bg_fb mui-row">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="79">
+				<foreach name="image['child']" item="child">
+				<div class="left width-50"><img src="__ROOT__/{$child.img_url}" alt="" /></div>
+				</foreach>
+				<div class="right width-50">					
+					<div class="text_work">
+						<h5 class="work_item">{$image.plate_name}</h5>
+						<span class="item_text">
+							{$image.customized-buttonpane}
+						</span>
+					</div>
+					</eq>
+					</foreach>
+				</div>
+			</div> 
+			<div class="bg_fb mui-row">
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="80">
+				<div class="left width-50">
+					<foreach name="image['child']" item="child">
+					<img src="__ROOT__/{$child.img_url}" alt="" />
+					</foreach>
+					<div class="right right_text">
+						<h5 class="item">{$image.plate_name}</h5>
+						<span class="item-text">
+							{$image.customized-buttonpane}
+						</span>
+					</div>
+				</div>
+				</eq>
+				</foreach>
+				<foreach name="images_list" item="image">
+				<eq name="image.plate_id" value="81">
+				<div class="right width-50">
+					<foreach name="image['child']" item="child">
+					<img src="__ROOT__/{$child.img_url}" alt="" />
+					</foreach>
+					<div class=" left left_text">
+						<h5 class="item">{$image.plate_name}</h5>
+						<span class="item-text">
+							{$image.customized-buttonpane}
+						</span>
+					</div>
+				</div>
+				</eq>
+				</foreach>
+			</div> 
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('.work ').hover(function(){
+				var pHeight=$(this).find('img').height();
+				$('.pHeight').css('height',pHeight+'px');
+//				$('._pHeight').css('margin-top',-pHeight-3+'px');
+			}
+		)
+	</script>
+</eq>
+<eq name="plate_id" value="48">
+<link rel="stylesheet" href="__PUBLIC__/home/css/culture.css" />
+	<div id="corporateCuture">	
+		<foreach name="images_list" item="image">
+		<eq name="image.plate_id" value="82">
+		<div class="_banner">
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}" alt="" />
+			</foreach>
+			<div class="_banner-text background-no">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<div class="content ">		
+			<ul class="tab_menu width-800 margin-124">
+			<foreach name="images_list" item="image">	
+			<if condition="$image.pp_id eq 48 AND $image.plate_id neq 107">					
+				<eq name="image.plate_id" value="82">
+				<li class="<eq name="plate_id" value="48">active</eq> width-20"><a href="__CONTROLLER__/index/id/48">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>	
+				</eq>
+			</if>
+			</foreach>
+			</ul>		
+			<div class="tab-content">
+				<!--品牌文化-->
+				<div class="item culture">									
+					<div class="companyProfile ">
+						<foreach name="images_list" item="image">
+						<eq name="image.plate_id" value="86">
+						<h5 class="c_title">{$image.plate_name}&nbsp;|&nbsp;<span class="english">COMPANY PROFILE</span></h5>
+						<div class="cp_describ">	
+							<div class="left cpimg_show">
+								<foreach name="image['child']" item="child">
+								<eq name="child.img_desc" value="1">
+								<p class="top left">								
+									<img src="__ROOT__/{$child.img_url}" alt="" />								
+								</p>
+								</eq>
+								<eq name="child.img_desc" value="2">
+								<p class="bottom right">
+									<img src="__ROOT__/{$child.img_url}" alt="" />
+								</p>
+								</eq>
+								</foreach>
+							</div> 
+							<div class="right cp_text">			
+								<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>	
+							</div>							
+						</div>
+						</eq>
+						</foreach>
+					</div>		
+					<div class="culturalConcept ">						
+						<h5 class="c_title">文化理念&nbsp;|&nbsp;<span class="english">COMPANY CONCEPT</span></h5>
+						<ul class="cc_item mui-row">
+							<foreach name="images_list" item="image">							
+							<eq name="image.pp_id" value="90">
+							<li class="young">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								</foreach>
+								<p class="c_item">{$image.plate_name}</p>
+								<div class="text">
+									<p>
+										<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+									</p>
+									<button class="ggren">{$image.introduce}</button>
+								</div>
+							</li>
+							</eq>
+							</foreach>						
+						</ul>						
+					</div>
+					<div class="cooperativeEnterprise ">
+						<h5 class="c_title">合作企业&nbsp;|&nbsp;<span class="english">COOPERATIVE ENTERPRISE</span></h5>
+						<div class="c_logo">							
+							<ul class="mui-row">
+							<foreach name="images_list" item="image">
+							<eq name="image.pp_id" value="91">
+								<foreach name="image['child']" item="child">
+								<li><img src="__ROOT__/{$child.img_url}" alt="" /></li>
+								</foreach>
+							</eq>
+							</foreach>	
+							</ul>							
+						</div>
+						
+					</div>
+					
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+	<div class="cultureBanner">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="107">
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}"/>
+		</foreach>
+		</eq>
+		</foreach>
+	</div>
+</eq>
+<eq name="plate_id" value="84">
+<link rel="stylesheet" href="__PUBLIC__/home/css/culture.css" />
+	<div id="new">
+		<foreach name="images_list" item="image">
+		<eq name="image.plate_id" value="84">
+		<div class="_banner">		
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}" alt="" />
+			</foreach>
+			<div class="_banner-text background-no">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<div class="content">
+			<ul class="tab_menu width-800 margin-124" >
+			<foreach name="images_list" item="image">	
+			<if condition="$image.pp_id eq 48 AND $image.plate_id neq 107">					
+				<eq name="image.plate_id" value="82">
+				<li class="<eq name="plate_id" value="48">active</eq> width-20"><a href="__CONTROLLER__/index/id/48">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>	
+				</eq>
+			</if>
+			</foreach>
+			</ul>
+			<div class="tab-content">
+				<div class="item new">
+					<foreach name="images_list" item="image">
+					<if condition="$image.pp_id eq 84 AND $image.plate_id neq 110">					
+					<div class="new_describ">
+						<div class="text">
+							<h5 class="title">{$image.plate_name}</h5>
+							<p>
+								{$image.introduce}
+							</p>
+						</div>
+						<div class="photo">
+							<ul class="photos mui-row">
+							<foreach name="image['child']" item="child">
+								<eq name="child.img_desc" value="1">
+								<li class="left big_photo"><img src="__ROOT__/{$child.img_url}" alt="" /></li>
+								</eq>
+								<li class="right  liheight">
+									<eq name="child.img_desc" value="2">
+									<div class="small_top"><img src="__ROOT__/{$child.img_url}" alt="" /></div>
+									</eq>
+									<eq name="child.img_desc" value="3">
+									<div class="small_bottom"><img src="__ROOT__/{$child.img_url}" alt="" /></div>
+									</eq>
+								</li>
+							</foreach>	
+							</ul>
+						</div>
+					</div>
+					</if>
+					</foreach>
+				</div>
+			</div>
+		</div>
+	</div>
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="107">
+		<foreach name="image['child']" item="child">
+			<!--添加内容--div容器-->
+		<div class="cultureBanner">
+			<img src="__ROOT__/{$child.img_url}"/>
+		</div>
+		</foreach>
+		</eq>
+		</foreach>
+</eq>
+<eq name="plate_id" value="85">
+<link rel="stylesheet" href="__PUBLIC__/home/css/culture.css" />
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=Uu2WBOVIBQRLz8vGGAajjVTRozkFh1Qp&services=&t=20170823191629"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/map.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+	<div id="us">
+		<div class="_banner">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="85">
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}"/>
+		</foreach>
+		</eq>
+		</foreach>
+		</div>
+		<div class="content">
+			<ul class="tab_menu width-800 margin-124" >
+			<foreach name="images_list" item="image">	
+			<if condition="$image.pp_id eq 48 AND $image.plate_id neq 107">					
+				<eq name="image.plate_id" value="82">
+				<li class="<eq name="plate_id" value="48">active</eq> width-20"><a href="__CONTROLLER__/index/id/48">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>	
+				</eq>
+			</if>
+			</foreach>
+			</ul>
+			<div class="tab-content">
+				<div class="us_pop" onmousewheel="return false;">
+					<div class="join_mesege">
+						<span class="close"></span>
+						<div class="mesege">
+							<p class="logo"><img src="__PUBLIC__/home/img/c_logo.png"></p>
+							<div class=" PositionData">
+								<div class="left">
+									<p class="p_title">岗位职责: </p>
+									<ul>
+										<li>1、熟练操作办公软件和包装设计的相关软件，如Photoshop、CoreIDRAW等</li>
+										<li> 2、熟悉纸品印刷工艺流程，对印刷包装消费品（例如：彩盒、精品盒等）有深入了解，熟悉纸品类 包装行业设计和发展趋势，懂得包装印刷的基本知识；</li>
+										<li>3、善于沟通、协调各部门工作，有责任心。</li>
+									</ul>
+									<p class="p_title">任职要求: </p>
+									<ul>
+										<li>1、性别不限，20—35岁，大专以上学历；</li>
+										<li> 2、有包装设计1年以上工作经验；</li>
+									</ul>
+								</div>
+								<div class="right">
+									<p class="p_title">联系电话: </p>
+									<ul>
+										<li>1.13805729777（董老师） </li>
+										<li>2.13805732986（韦总）</li>
+									</ul>
+									<p class="p_title">公司地址:</p>
+									<p>杭州市西湖区转塘中国云机算产业园3栋2层D3  </p>
+									<p>招聘人数：若干 </p>
+									<p>发布时间：2017.7.02</p>
+								</div>		
+							</div>
+							<button class="apply">申请职位</button>
+						</div>
+					</div>
+				</div>
+				<div class="item us">
+					<div class="join">
+						<h5 class="c_title">加入我们&nbsp;|&nbsp;<span class="english">JOIN US</span></h5>
+						<div class="table-header-wrap">
+							<table >
+								<thead>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<tr>
+										<th>工作岗位</th>
+										<th>职位类别</th>
+										<th>工作地点</th>
+										<th>招聘人数</th>
+										<th>发布时间</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="table-body-wrap">
+							<table >
+								<tbody>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<col width="16.6%"></col>
+									<foreach name="recruit_list" item="recruit">
+									<tr>
+										<td>{$recruit[recruit_name]}</td>
+										<td>{$recruit[job]}</td>
+										<td>{$recruit[place]}</td>
+										<td>{$recruit[number]}</td>
+										<td>{$recruit[add_time]|date="Y.m.d",###}</td>										
+										<td class="chakan" id="{$recruit[recruit_id]}">查看详情</td>
+									</tr>
+									</foreach>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+					<div class="contact">
+						<h5 class="c_title">联系我们&nbsp;|&nbsp;<span class="english">CONTACT US</span></h5>
+						<div class="contact_way">
+							<ul class=" mui-row">
+								<foreach name="data" item="dat">
+								<eq name="dat.id" value="85">
+								<foreach name="dat.child" item="da">
+								<li class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-6">
+									<p class="li-content">
+										<h5 class="con-title">{$da['name']}</h5>	
+										<foreach name="da.child" item="d">
+										<p class=" address">{$d['name']}</p>
+										</foreach>
+									</p>
+									
+									<span class="white_div"></span>
+								</li>
+								</foreach>
+								</eq>
+								</foreach>
+							</ul>
+						</div>
+						<div class="map" >
+							<div id="allmap"></div>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ide_coor">
+		<div class="suggest" action="__CONTROLLER__/message" enctype="multipart/form-data" method="post">
+			<h5 class="i_title">意见合作&nbsp;|&nbsp;<span class="english">CONTACT US</span></h5>
+			<form class="suggest_form" action="__CONTROLLER__/message" enctype="multipart/form-data" method="post">
+				<div class="mui-row width-80">
+					<p class="left width-40">称呼<input type="text" name="message_name" value="" /></p>
+					<p class="right width-40">电话<input type="text" name="message_phone" value="" /></p>
+				</div>
+				<p class="text width-80">具体内容  <textarea name="message_content" class="width-88" rows="5" cols="5"></textarea></p>
+				<div class="mui-row btns width-80">
+					<input type="hidden" name="plate_id" value="{$plate_id}" /> 
+					<button type="reset">撤销</button>
+					<button type="submit" class="black">提交</button>
+				</div>
+			</form>
+		</div>		
+	</div>
+	<script type="text/javascript">
+		$('button[type="submit"]').click(function(){
+			var name = $('input[name="message_name"]').val();
+			var phone = $('input[name="message_phone"]').val();
+			var content = $('textarea[name="message_content"]').val();
+			if(name == ''){
+				alert('请输入您的名字');
+				return false;
+			}
+			if(phone == ''){
+				alert('请输入您的联系方式');
+				return false;
+			}
+			if(content == ''){
+				alert('请输入您想说的话');
+				return false;
+			}
+			
+		})
+		$(document).ready(function(){
+			$('.chakan').click(function(){
+				var id = $(this).attr('id');
+				$.ajax({
+					   type: "POST",
+					   url: "__URL__/recruit",
+					   data: {"id":id},
+					   dataType: "json",
+					   success: function(data){	
+							var html = '';
+							html += '<div class="left">'+data.content+'</div>';
+							html += '<div class="right">';
+							html += '<p class="p_title">联系电话: </p>';
+							html += '<ul>';
+							html += '<li>'+data.phone+'</li>';
+							html += '</ul>';
+							html += '<p class="p_title">公司地址:</p>';
+							html += '<p>'+data.address+'</p>';
+							html += '<p>招聘人数：'+data.number+' </p>';
+							html += '<p>发布时间：'+data.add_time+'</p>';
+							html += '</div>';
+									
+							$(".PositionData").html(html);										
+							$('.us_pop').css('display','block');	
+					   }
+				});
+			})
+			$('.join_mesege .close').click(function(){
+				$('.us_pop').css('display','none');
+			})
+		})
+		
+	</script>
+</eq>
+<eq name="plate_id" value="83">
+<link rel="stylesheet" href="__PUBLIC__/home/css/culture.css" />
+	<div id="corporateCuture">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="83">
+		<div class="_banner">			
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}"/>
+			</foreach>			
+			<div class="_banner-text background-no">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<div class="content ">
+			<ul class="tab_menu width-800 margin-124" >
+			<foreach name="images_list" item="image">	
+			<if condition="$image.pp_id eq 48 AND $image.plate_id neq 107">					
+				<eq name="image.plate_id" value="82">
+				<li class="<eq name="plate_id" value="48">active</eq> width-20"><a href="__CONTROLLER__/index/id/48">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>	
+				</eq>
+			</if>
+			</foreach>
+			</ul>
+			<div class="tab-content">
+				<div class="item team" id="team">
+					<foreach name="page_list" item="pa">
+					<div class="person_describ">
+						<div class="text">
+							<h5 class="name">{$pa['plate_name']}</h5>
+							<p>
+								{$pa['introduce']}
+							</p>
+						</div>
+						<div class="photo">
+							<img src="__ROOT__/{$pa.img_url}" alt="" />
+						</div>
+					</div>
+					</foreach>
+					
+				</div>
+				<ul id="page" class="pageMa">
+					{$page}
+				</ul>
+			</div>	
+	</div>
+	</div>
+	<div class="cultureBanner">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="107">
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}"/>
+		</foreach>
+		</eq>
+		</foreach>
+	</div>
+</eq>
+<eq name="plate_id" value="20">
+<link rel="stylesheet" href="__PUBLIC__/home/css/industrial.css" />
+<div id="industrial">
+	<foreach name="images_list" item="image">							
+	<eq name="image.plate_id" value="145">
+	<div class="in_banner">
+	<foreach name="image['child']" item="child">
+	<img src="__ROOT__/{$child.img_url}"/>
+	</foreach>
+	</div>
+	<div class="in_describ">
+		<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+	</div>
+	</eq>
+	</foreach>
+	<div class="content">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="146">
+		<div class="bicycle mui-row">
+			<div class="mui-col-lg-5 mui-col-md-5 mui-col-sm-5 mui-col-xs-6" >
+				<h5>{$image.plate_name}</h5>
+				<div class="descript_text">
+				   {$image.introduce}  
+				</div>
+				<a href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+			</div>
+			<div class="mui-col-lg-6 mui-col-md-6 mui-col-sm-6 mui-col-xs-6 imgs" >
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<ul class="appliances mui-row">
+			<foreach name="images_list" item="image">							
+			<eq name="image.plate_id" value="147">
+			<li >
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="148">
+			<li class="mindel">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="149">
+			<li >
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			</foreach>
+		</ul>
+		<div class="big-appliances">
+			<foreach name="images_list" item="image">							
+			<eq name="image.plate_id" value="150">
+			<div class="sound">
+				<div class="mui-row sound_pro">
+					<div class="img">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}"/>
+						</foreach>
+						<p>{$image.plate_name}</p>
+					</div>
+					<div class="des_text">
+						<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+					</div>
+				</div>
+			</div>
+			</eq>
+			<eq name="image.plate_id" value="151">
+			<div class="smallapp">
+				<div class="mui-row  smallapp_pro">
+					<div class="des_text">
+						<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+					</div>
+					<div class="img">
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}"/>
+						</foreach>
+						<p>{$image.plate_name}</p>
+					</div>
+				</div>			
+			</div>
+			</eq>
+			</foreach>
+		</div>
+		<ul class="ider">
+			<foreach name="images_list" item="image">							
+			<eq name="image.plate_id" value="152">
+			<li class="id1">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="153">
+			<li class="id2">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="154">
+			<li class="id3">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="155">
+			<li class="id4">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="156">
+			<li class="id5">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			<eq name="image.plate_id" value="157">
+			<li class="id6">
+				<foreach name="image['child']" item="child">
+				<img src="__ROOT__/{$child.img_url}"/>
+				</foreach>
+				<p>{$image.plate_name}</p>
+			</li>
+			</eq>
+			</foreach>
+		</ul>
+	</div>
+</div>
+</eq>
+<eq name="plate_id" value="46">
+<link rel="stylesheet" href="__PUBLIC__/home/css/web.css" />
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.timelinr-0.9.3.js" ></script>
+	<div id="webset">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="158">
+		<div class="_banner">
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}"/>
+			</foreach>
+			<div class="_banner-text">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<foreach name="plate_all" item="plate">
+		<eq name="plate.plate_id" value="159">
+		<div class="text">
+			<?php echo htmlspecialchars_decode($plate['customized-buttonpane']);?>
+		</div>
+		</eq>
+		</foreach>
+		<div class="content">
+			<ul class="tab_menu" >
+			<foreach name="plate_all" item="plate">	
+			<if condition="$plate.parent_id eq 46">		
+				<eq name="plate.plate_id" value="166">
+				<li class="<eq name="plate_id" value="46">active</eq>"><a href="__CONTROLLER__/index/id/46">{$plate.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$plate.plate_id">active</eq>"><a href="__CONTROLLER__/index/id/{$plate.plate_id}">{$plate.plate_name}</a></li>	
+				</eq>
+			</if>
+			</foreach>				
+			</ul>
+			<div class="tab-content">
+				<!--web-->
+				<div class="item web">
+					<div id="timeline">
+						<ul id="dates" class="left">
+							<foreach name="images_list" item="image">
+							<eq name="image.pp_id" value="160">
+							<li><a href="#">{$image.plate_name}</a></li>
+							</eq>
+							</foreach>							
+						</ul>
+						<ul id="issues" class="right">
+							<foreach name="images_list" item="image">
+							<eq name="image.pp_id" value="160">
+							<li id="#app1">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" width="280"/>
+								</foreach>										
+								<h5></h5>
+								<p>
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+							</li>
+							</eq>
+							</foreach>
+						</ul>
+						<div id="grad_top"></div>
+						<div id="grad_bottom"></div>
+						<a href="#" id="next">+</a>
+						<a href="#" id="prev">-</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).ready(function(){
+			var hsize=$(window).height();
+			$().timelinr({
+				orientation: 'vertical',
+				issuesSpeed: 300,
+				datesSpeed: 100,
+				issuesSpeed: 500,
+				arrowKeys: 'true',
+				startAt: 3
+			});
+			//左侧激活状态下的背景图效果替换
+	$("#dates li a").click(function(){
+		$("#dates li").css('background','url(__PUBLIC__"/home/img/appPoint.jpg") left center no-repeat');
+		$(this).parent().css('background','url("__PUBLIC__/home/img/point_on.png") left center no-repeat');
+	})
+	$("#prev").click(function(){
+		$("#dates li").css('background','url("__PUBLIC__/home/img/appPoint.jpg") left center no-repeat');
+		setTimeout(cssbg,100);
+	})
+	$("#next").click(function(){
+		$("#dates li").css('background','url("__PUBLIC__/home/img/appPoint.jpg") left center no-repeat');
+		setTimeout(cssbg,100);	
+	})
+	function cssbg(){
+		$("#dates .selected").parent().css('background','url("__PUBLIC__/home/img/point_on.png") left center no-repeat');
+	}
+		})
+	</script>
+</eq>
+<eq name="plate_id" value="167">
+<link rel="stylesheet" href="__PUBLIC__/home/css/web.css" />
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.timelinr-0.9.3.js" ></script>
+	<div id="webset">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="169">
+		<div class="_banner">
+			<foreach name="image['child']" item="child">
+			<img src="__ROOT__/{$child.img_url}"/>
+			</foreach>
+			<div class="_banner-text">
+				<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+			</div>
+		</div>
+		</eq>
+		</foreach>
+		<foreach name="plate_all" item="plate">
+		<eq name="plate.plate_id" value="168">
+		<div class="text">
+			<?php echo htmlspecialchars_decode($plate['customized-buttonpane']);?>
+		</div>
+		</eq>
+		</foreach>
+		<div class="content">
+			<ul class="tab_menu" >
+				<foreach name="plate_all" item="plate">	
+				<if condition="$plate.parent_id eq 46">		
+					<eq name="plate.plate_id" value="166">
+					<li class="<eq name="plate_id" value="46">active</eq>"><a href="__CONTROLLER__/index/id/46">{$plate.plate_name}</a></li>
+					<else/>
+					<li class="<eq name="plate_id" value="$plate.plate_id">active</eq>"><a href="__CONTROLLER__/index/id/{$plate.plate_id}">{$plate.plate_name}</a></li>	
+					</eq>
+				</if>
+				</foreach>
+			</ul>
+			<div class="tab-content">
+				<!--app-->
+				<div class="item app">
+					<div id="timeline">
+						<ul id="dates" class="left">						
+							<foreach name="images_list" item="image">
+							<eq name="image.pp_id" value="170">
+							<li><a href="#">{$image.plate_name}</a></li>
+							</eq>
+							</foreach>						
+						</ul>
+						<ul id="issues" class="right">
+							<foreach name="images_list" item="image">
+							<eq name="image.pp_id" value="170">
+							<li id="#app1">
+								<foreach name="image['child']" item="child">
+								<img src="__ROOT__/{$child.img_url}" width="280"/>
+								</foreach>										
+								<h5></h5>
+								<p>
+									{$image.introduce}
+								</p>
+								<a href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+							</li>
+							</eq>
+							</foreach>
+						</ul>
+						<div id="grad_top"></div>
+						<div id="grad_bottom"></div>
+						<a href="#" id="next">+</a>
+						<a href="#" id="prev">-</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript">
+	$(window).ready(function(){
+		var hsize=$(window).height();
+		$().timelinr({
+			orientation: 'vertical',
+			issuesSpeed: 300,
+			datesSpeed: 100,
+			issuesSpeed: 500,
+			arrowKeys: 'true',
+			startAt: 3
+		});
+	//左侧激活状态下的背景图效果替换
+	$("#dates li a").click(function(){
+		$("#dates li").css('background','url(__PUBLIC__"/home/img/appPoint.jpg") left center no-repeat');
+		$(this).parent().css('background','url("__PUBLIC__/home/img/point_on.png") left center no-repeat');
+	})
+	$("#prev").click(function(){
+		$("#dates li").css('background','url("__PUBLIC__/home/img/appPoint.jpg") left center no-repeat');
+		setTimeout(cssbg,100);
+	})
+	$("#next").click(function(){
+		$("#dates li").css('background','url("__PUBLIC__/home/img/appPoint.jpg") left center no-repeat');
+		setTimeout(cssbg,100);	
+	})
+	function cssbg(){
+		$("#dates .selected").parent().css('background','url("__PUBLIC__/home/img/point_on.png") left center no-repeat');
+	}
+		})
+	</script>
+</eq>
+<eq name="plate_id" value="113">
+<link rel="stylesheet" href="__PUBLIC__/home/css/photograhy.css" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/common.css" />
+<div id="video">
+	<foreach name="images_list" item="image">							
+	<eq name="image.plate_id" value="113">
+	<div class="con_banner">
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}"/>
+		</foreach>
+	</div>
+	</eq>
+	</foreach>
+	<div class="content">
+		<foreach name="plate_all" item="plate">
+		<eq name="plate.plate_id" value="113">
+		<div class="je_describ">
+			<?php echo htmlspecialchars_decode($plate['customized-buttonpane']);?>
+		</div>
+		</eq>
+		</foreach>
+		<div class="jew_items">
+			<ul class="tab_menu width-800 margin-124" >
+				<foreach name="images_list" item="image">
+				<eq name="image.pp_id" value="52">
+				<eq name="image.plate_id" value="66">
+				<li class="<eq name="plate_id" value="52">active</eq> width-20"><a href="__CONTROLLER__/index/id/52">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>
+				</eq>
+				</eq>
+				</foreach>			
+			</ul>
+			<div class="tab-content">				
+				<!--影视制作-->
+				<div class="item ">
+					<!--<ul class="eh_bg width-800" >-->
+						<!-- //轮播 -->
+						<div class="indexmaindiv" id="indexmaindiv00">
+							<div class="indexmaindiv0 clearfix" >
+								<button id="goleft"><img src="__PUBLIC__/home/img/left.png" alt=""></button>
+								<div class="number1-3" style="">
+									<span id="smallNumber">1</span class="bigNumber">
+									<span class="bigNumber" >/</span>
+									<span class="bigNumber" id="bigNumber">3</span>
+								</div>
+
+								<div class="maindiv0" id="maindiv0">
+									<ul id="count0">
+										<foreach name="images_list" item="image">	
+										<in name="image.pp_id" value="176,184,192">										
+										<li>										
+											<div class="worksShow">
+												<div>	
+													<foreach name="images_list" item="image">	
+													<eq name="image.pp_id" value="176">	
+													<eq name="image.sort_order" value="1">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop img1-1" style="background:url(__ROOT__/{$child.img_url});width:21.9%;left:24%;">
+													</foreach>
+														<div class="pop_describ" >
+															<h3 style="">{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>	
+													</eq>													
+													<eq name="image.sort_order" value="2">													
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:39.6%;left:46%;top: 9.5%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 41.8%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="3">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:21.9%;left:2%;top:28.6%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 100%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="4">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:16%;left:24%;top:39.0%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 100%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="5">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:40.9%;left:40.1%;top:39.0%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 56.2%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="6">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:22.9%;left:17%;top:67.4%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 80%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="7">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:24%;left:40.1%;top:79.8%;">
+													</foreach>	
+														<div class="pop_describ" style="padding-bottom: 47%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													</eq>
+													</foreach>
+												</div>
+											</div>												
+										</li>									
+										<li>										
+											<div class="worksShow">
+												<div>	
+													<foreach name="images_list" item="image">	
+													<eq name="image.pp_id" value="184">	
+													<eq name="image.sort_order" value="1">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop img1-1" style="background:url(__ROOT__/{$child.img_url});width:21.9%;left:24%;">
+													</foreach>
+														<div class="pop_describ" >
+															<h3 style="">{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>	
+													</eq>													
+													<eq name="image.sort_order" value="2">													
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:39.6%;left:46%;top: 9.5%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 41.8%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="3">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:21.9%;left:2%;top:28.6%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 100%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="4">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:16%;left:24%;top:39.0%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 100%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="5">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:40.9%;left:40.1%;top:39.0%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 56.2%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="6">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:22.9%;left:17%;top:67.4%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 80%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="7">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:24%;left:40.1%;top:79.8%;">
+													</foreach>	
+														<div class="pop_describ" style="padding-bottom: 47%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													</eq>
+													</foreach>
+												</div>
+											</div>												
+										</li>								
+										<li>										
+											<div class="worksShow">
+												<div>	
+													<foreach name="images_list" item="image">	
+													<eq name="image.pp_id" value="192">	
+													<eq name="image.sort_order" value="1">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop img1-1" style="background:url(__ROOT__/{$child.img_url});width:21.9%;left:24%;">
+													</foreach>
+														<div class="pop_describ" >
+															<h3 style="">{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>	
+													</eq>													
+													<eq name="image.sort_order" value="2">													
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:39.6%;left:46%;top: 9.5%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 41.8%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="3">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:21.9%;left:2%;top:28.6%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 100%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn">
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="4">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:16%;left:24%;top:39.0%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 100%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="5">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:40.9%;left:40.1%;top:39.0%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 56.2%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="6">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:22.9%;left:17%;top:67.4%;">
+													</foreach>
+														<div class="pop_describ" style="padding-bottom: 80%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													<eq name="image.sort_order" value="7">
+													<foreach name="image['child']" item="child">
+													<div class="img_pop" style="background:url(__ROOT__/{$child.img_url});width:24%;left:40.1%;top:79.8%;">
+													</foreach>	
+														<div class="pop_describ" style="padding-bottom: 47%;">
+															<h3>{$image.plate_name}</h3>
+															<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="btn" >
+															<button> 查看详情 </button>
+															</a>
+														</div>
+													</div>
+													</eq>
+													</eq>
+													</foreach>
+												</div>
+											</div>												
+										</li>
+										</in>
+										</foreach>
+									</ul>
+								</div>
+								<button id="goright" ><img src="__PUBLIC__/home/img/right.png" alt=""></button>
+							</div>
+						</div>
+					<!--</ul>-->
+				</div>
+			</div>
+		</div>
+</div>
+<script type="text/javascript">
+$(function(){
+//轮播
+oDivw = $("#indexmaindiv00").width();
+	 liw = oDivw*1;
+	 oBtnLeft = document.getElementById("goleft");
+	 oBtnRight = document.getElementById("goright");
+	 oDiv = document.getElementById("indexmaindiv00");
+	 oDiv1 = document.getElementById("maindiv0");
+	 oUl = oDiv.getElementsByTagName("ul")[0];
+	 aLi = oUl.getElementsByTagName("li");
+	 now = -1 * (aLi[0].offsetWidth + 160);
+
+	$("#count0 li").width(liw);
+	$("#count0").width(liw*3);
+	
+	oUl.style.width = aLi.length * (aLi[0].offsetWidth + 35)+ 10 + 'px';
+
+	oBtnRight.onclick = function () {
+		snumber = parseInt($("#smallNumber").text());
+		//var n = Math.floor((aLi.length * (aLi[0].offsetWidth + 13) + oUl.offsetLeft) / aLi[0].offsetWidth);
+
+
+		if (snumber >= 3) {
+			move(oUl, 'left', 0);
+			snumber = 1;
+			$("#smallNumber").text(snumber);
+		}
+		else {
+			//alert( oUl.offsetLeft +" " + now +" "+aLi[0].offsetWidth+" "+liw);
+			move(oUl, 'left', oUl.offsetLeft + now);
+			snumber = snumber+1;
+			$("#smallNumber").text(snumber);
+		}
+	}
+	oBtnLeft.onclick = function () {
+		snumber = parseInt($("#smallNumber").text());
+		var now1 = -Math.floor((aLi.length / 1)) * 1 * (aLi[0].offsetWidth + 36);
+
+		if (snumber == 1) {
+			//alert(now1+" "+aLi[0].offsetWidth);
+			move(oUl, 'left', -2348);
+			snumber = 3;
+			$("#smallNumber").text(snumber);
+		}
+		else {
+			snumber = snumber-1;
+			$("#smallNumber").text(snumber);
+			move(oUl, 'left', oUl.offsetLeft - now);
+		}
+	}
+	var timer = setInterval(oBtnRight.onclick, 2555000);
+	oDiv.onmouseover = function () {
+		clearInterval(timer);
+	}
+	oDiv.onmouseout = function () {
+		timer = setInterval(oBtnRight.onclick, 2555000);
+	}
+
+function getStyle(obj, name) {
+	if (obj.currentStyle) {
+		return obj.currentStyle[name];
+	}
+	else {
+		return getComputedStyle(obj, false)[name];
+	}
+}
+
+function move(obj, attr, iTarget) {
+	clearInterval(obj.timer)
+	obj.timer = setInterval(function () {
+		var cur = 0;
+		if (attr == 'opacity') {
+			cur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+		}
+		else {
+			cur = parseInt(getStyle(obj, attr));
+		}
+		var speed = (iTarget - cur) / 6;
+		speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+		if (iTarget == cur) {
+			clearInterval(obj.timer);
+		}
+		else if (attr == 'opacity') {
+			obj.style.filter = 'alpha(opacity:' + (cur + speed) + ')';
+			obj.style.opacity = (cur + speed) / 100;
+		}
+		else {
+			obj.style[attr] = cur + speed + 'px';
+		}
+	}, 30);
+} 
+
+})		
+		
+</script>	
+</eq>
+<eq name="plate_id" value="13">
+<link rel="stylesheet" href="__PUBLIC__/home/css/common.css" />
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/CloudCarousel.1.0.5.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){						   
+	// 这初始化容器中指定的元素，在这种情况下，旋转木马.
+	$("#carousel1").CloudCarousel({	
+		reflOpacity:0.0,
+		minScale:0.5,		
+		xPos:450,
+		yPos:010,
+		buttonLeft: $('#but1'),
+		buttonRight: $('#but2'),
+		altBox: $("#alt-text"),
+		titleBox: $("#title-text"),				
+		FPS:30,
+		reflHeight:86,
+		reflGap:2,
+		yRadius:40,
+		autoRotateDelay: 5500,
+		speed:0.2,
+		mouseWheel:false,
+		bringToFront:true,
+		autoRotate:'no'
+	});	
+});
+</script>
+<div id="jewler">
+	<foreach name="images_list" item="image">							
+	<eq name="image.plate_id" value="200">
+	<div class="con_banner">
+	<foreach name="image['child']" item="child">
+	<img src="__ROOT__/{$child.img_url}"/>
+	</foreach>
+	</div>
+	</eq>
+	</foreach>
+	<div class="content">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="200">
+		<div class="je_describ">
+			<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+		</div>
+		</eq>
+		</foreach>
+		<div class="jew_items">
+				<ul class=" width-800 margin-124" >
+				<foreach name="images_list" item="image">
+				<eq name="image.pp_id" value="13">
+				<eq name="image.plate_id" value="200">
+				<li class="<eq name="plate_id" value="13">active</eq> width-20"><a href="__CONTROLLER__/index/id/13">{$image.plate_name}</a></li>
+				<else/>
+				<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>
+				</eq>
+				</eq>
+				</foreach>					
+				</ul>
+			<div class="tab-content">
+				<!--珠宝设计-->
+				<div class="item desc" >	
+					<foreach name="images_list" item="image">							
+					<eq name="image.plate_id" value="201">
+					<div class="desc_stage">
+					<foreach name="image['child']" item="child">
+					<img src="__ROOT__/{$child.img_url}"/>
+					</foreach>
+					</div>
+					</eq>
+					</foreach>
+					<div class="desc_work">
+						<ul class="desc_show">
+							<foreach name="images_list" item="image">							
+							<eq name="image.pp_id" value="202">							
+							<foreach name="image['child']" item="child">
+							<li class="s{$image.sort_order} <eq name='image.sort_order' value='1'>s_active</eq>"><img src="__ROOT__/{$child.img_url}" alt="" /></li>
+							</foreach>
+							</eq>
+							</foreach>
+						</ul>
+					</div>	
+
+					<div id="carousel1">
+					  <p id="title-text"></p>
+					  <p id="alt-text"></p>
+					  <foreach name="images_list" item="image">							
+					  <eq name="image.pp_id" value="208">							
+					  <foreach name="image['child']" item="child">
+					  <a target="_parent" class="mofu11"><img class="cloudcarousel" src="__ROOT__/{$child.img_url}"/></a>
+					  </foreach>
+					  </eq>
+					  </foreach>					  
+						<ul class="btns" style="position:absolute;top:50%;">
+							<li id="but1" class="">&lt</li>
+							<li class=""><span id="nubmerSS" class="">1</span>/<span id="numberBB" class="">3</span></li>
+							<li id="but2" class="">&gt</li>
+						</ul>
+					</div>
+
+					<script>
+					var numberBB = $("#carousel1 a").size();
+					$("#numberBB").text(numberBB);
+					</script>
+	
+					<div class="desc_mind">
+						<foreach name="images_list" item="image">							
+						<eq name="image.plate_id" value="212">							
+						<foreach name="image['child']" item="child">
+						<img src="__ROOT__/{$child.img_url}" alt="" />
+						</foreach>
+						</eq>
+						</foreach>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var hsize=$(window).height();
+		var wsize=$(window).width();
+		$(".flex_height").css('height',hsize+'px');
+		$(".bg_height").height((hsize+280));
+		$('.desc_show li').click(function(){
+			$(this).addClass('s_active');
+			$(this).siblings().removeClass('s_active');
+		});
+		$('.tab_menu li').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+				
+		});	
+	})
+</script>
+</eq>
+<eq name="plate_id" value="213">
+<link rel="stylesheet" href="__PUBLIC__/home/css/common.css" />
+<div id="jewler">
+	<div class="con_banner">
+	<foreach name="images_list" item="image">							
+	<eq name="image.plate_id" value="213">
+	<foreach name="image['child']" item="child">
+	<img src="__ROOT__/{$child.img_url}"/>
+	</foreach>
+	</eq>
+	</foreach>
+	</div>
+	<div class="content">
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="213">
+		<div class="je_describ">
+			<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+		</div>
+		</eq>
+		</foreach>
+		<div class="jew_items">
+				<ul class="tab_menu width-800 margin-124" >
+					<foreach name="images_list" item="image">
+					<eq name="image.pp_id" value="13">
+					<eq name="image.plate_id" value="200">
+					<li class="<eq name="plate_id" value="13">active</eq> width-20"><a href="__CONTROLLER__/index/id/13">{$image.plate_name}</a></li>
+					<else/>
+					<li class="<eq name="plate_id" value="$image.plate_id">active</eq> width-20"><a href="__CONTROLLER__/index/id/{$image.plate_id}">{$image.plate_name}</a></li>
+					</eq>
+					</eq>
+					</foreach>					
+				</ul>
+			<div class="tab-content">		
+				<!--珠宝展示-->
+				<div class=" item jew_show">
+					<ul class="eh_bg">
+						<foreach name="images_list" item="image">							
+						<eq name="image.pp_id" value="214">
+						<foreach name="image['child']" item="child">
+						<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="eh{$image.sort_order}">
+							<li>
+								<img src="__ROOT__/{$child.img_url}" alt="" />
+								<p>{$image.plate_name}</p>
+							</li>
+						</a>
+						</foreach>
+						</eq>
+						</foreach>						
+					</ul>
+					<ul class="ez_bg">
+						<foreach name="images_list" item="image">							
+						<eq name="image.pp_id" value="222">
+						<foreach name="image['child']" item="child">
+						<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="ez{$image.sort_order}">
+							<li>
+								<img src="__ROOT__/{$child.img_url}" alt="" /><br />
+								<p>{$image.plate_name}</p>
+							</li>
+						</a>
+						</foreach>
+						</eq>
+						</foreach>							
+					</ul>
+					<ul class="jz_bg">
+						<foreach name="images_list" item="image">							
+						<eq name="image.pp_id" value="228">
+						<foreach name="image['child']" item="child">
+						<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="jz{$image.sort_order}">
+							<li>
+								<img src="__ROOT__/{$child.img_url}" alt="" /><br />
+								<p>{$image.plate_name}</p>
+							</li>
+						</a>
+						</foreach>
+						</eq>
+						</foreach>						
+					</ul>
+					<ul class="sl_bg">
+						<foreach name="images_list" item="image">							
+						<eq name="image.pp_id" value="236">
+						<foreach name="image['child']" item="child">
+						<a href="__CONTROLLER__/view/id/{$image.plate_id}" class="sl{$image.sort_order}">
+							<li>
+								<img src="__ROOT__/{$child.img_url}" alt="" /><br />
+								<p>{$image.plate_name}</p>
+							</li>
+						</a>
+						</foreach>
+						</eq>
+						</foreach>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</eq>
+<eq name="plate_id" value="51">
+<link rel="stylesheet" href="__PUBLIC__/home/css/graphicDesign.css" />
+<div id="plane" style="background: rgba(246,246,246,1);">
+	<foreach name="images_list" item="image">							
+	<eq name="image.plate_id" value="51">
+	<div class="in_banner bannerbg">	
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}"/>
+		</foreach>
+		<div class="title1">
+			<?php echo htmlspecialchars_decode($image['customized-buttonpane']);?>
+		</div>		
+	</div>
+	</eq>
+	</foreach>
+	<div class="content">
+		<foreach name="plate_all" item="pla">			
+		<eq name="pla.plate_id" value="242">
+		<div style="text-align:center;">
+			<p class="qianyan">
+			<?php echo htmlspecialchars_decode($pla['customized-buttonpane']);?>
+			</p>
+		</div>
+		</eq>
+		</foreach>
+		<div class="posterDesign">
+		<div class="ceng1">
+			<div style="height:0;" class="line-text">
+				<foreach name="images_list" item="image">							
+				<eq name="image.plate_id" value="244">
+				<foreach name="image['child']" item="child">
+				<img style=" width: 50%;float: left;" src="__ROOT__/{$child.img_url}" alt="">				
+				</foreach>
+				<span class="imgBtn line">{$image.plate_name}</span>
+				</eq>
+				</foreach>
+				
+			</div>
+			<div style="float: right;margin-bottom: 8%;">
+				<foreach name="plate_all" item="pla">			
+				<eq name="pla.plate_id" value="243">
+				<?php echo htmlspecialchars_decode($pla['customized-buttonpane']);?>
+				</eq>
+				</foreach>
+			</div>
+			<div style="font-size: 0;vertical-align: bottom;" class="line-text">
+				<foreach name="images_list" item="image">							
+				<eq name="image.plate_id" value="245">
+				<foreach name="image['child']" item="child">
+				<img style="margin-left: 1.2%;width: 35.5%;" src="__ROOT__/{$child.img_url}" alt="">
+				</foreach>
+				<span class="imgBtn line2">{$image.plate_name}</span>
+				</eq>
+				</foreach>
+			</div>
+		</div>
+
+		<div class="ceng2">
+		<div class="line-text">
+			<foreach name="images_list" item="image">							
+			<eq name="image.plate_id" value="246">
+			<foreach name="image['child']" item="child">
+			<img style="width: 75.3%;" src="__ROOT__/{$child.img_url}" alt="">
+			</foreach>
+			<span class="imgBtn line3">{$image.plate_name}</span>
+			</eq>
+			<eq name="image.plate_id" value="247">
+			<div style="width: 22%;float: right;position: absolute;top: 0;right: 0;" class="line-text">
+				<foreach name="image['child']" item="child">
+				<img style="width:100%;display: block;" src="__ROOT__/{$child.img_url}" alt="">
+				</foreach>
+				<span class="imgBtn line4">{$image.plate_name}</span>
+			</div>
+			</eq>
+			</foreach>
+		</div>
+		</div>
+
+	<!-- //轮播 -->
+	<div class="indexmaindiv" id="indexmaindiv00">
+		<div id="gundongBg" style="background:url(__PUBLIC__/home/img/gundongbg.jpg)">
+			<img src="__PUBLIC__/home/img/gundongbg.jpg" alt="">
+		</div>
+		<div class="indexmaindiv0 clearfix">
+			<!-- <div id="goleft" style="z-index:30;background"></div> -->
+			<button id="goleft"><img src="__PUBLIC__/home/img/left_.png" alt=""></button>
+			<div class="maindiv0 " id="maindiv0">
+				<ul id="count0">
+					<foreach name="images_list" item="image">							
+					<eq name="image.pp_id" value="248">
+					<li>
+						<foreach name="image['child']" item="child">
+						<div class="detailimg img{$image.sort_order}" style="background:url(__ROOT__/{$child.img_url}); background-size: 100% 100%;">
+							<a class="fontBtn xiangqing" href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+						</div>
+						</foreach>
+					</li>
+					</eq>
+					</foreach>
+				</ul>
+			</div>
+
+			<button id="goright" ><img src="__PUBLIC__/home/img/right_.png" alt=""></button>
+		</div>
+	</div>
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="255">
+		<div class="ceng3">
+			<foreach name="image['child']" item="child">			
+			<img id="ceng3img{$child.img_desc}" src="__ROOT__/{$child.img_url}" alt="" style="">
+			</foreach>
+			<a class="fontBtn xiangqing" href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+		</div>
+		</eq>
+		</foreach>
+
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="256">
+		<div class="ceng4">
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}" alt="">
+		</foreach>
+		<a class="fontBtn xiangqing" href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+		</div>
+		</eq>
+		</foreach>
+
+		<foreach name="images_list" item="image">							
+		<eq name="image.plate_id" value="257">
+		<div class="ceng5">
+		<foreach name="image['child']" item="child">
+		<img src="__ROOT__/{$child.img_url}" alt="">
+		</foreach>
+		<a class="fontBtn xiangqing" href="__CONTROLLER__/view/id/{$image.plate_id}">查看详情</a>
+		</div>
+		</eq>
+		</foreach>
+		
+		<div class="ceng6">
+		<foreach name="images_list" item="image">							
+		<eq name="image.pp_id" value="258">
+		<foreach name="image['child']" item="child">
+		<img class="imgBtn" src="__ROOT__/{$child.img_url}" alt="" >
+		</foreach>
+		</eq>
+		</foreach>
+		</div>		
+		<div></div>		
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(window).ready(function(){
+
+	//设置图片宽度
+	var oDivw = $("#indexmaindiv00").width();
+	var liw = oDivw*0.93;
+
+	var oBtnLeft = document.getElementById("goleft");
+	var oBtnRight = document.getElementById("goright");
+	var oDiv = document.getElementById("indexmaindiv00");
+	var oDiv1 = document.getElementById("maindiv0");
+	var oUl = oDiv.getElementsByTagName("ul")[0];
+	var aLi = oUl.getElementsByTagName("li");
+	var now = -1 * (aLi[0].offsetWidth + 160);
+
+	$("#count0 li").width(liw);
+	
+	oUl.style.width = aLi.length * (aLi[0].offsetWidth + 35)+ 10 + 'px';
+	oBtnRight.onclick = function () {
+		var n = Math.floor((aLi.length * (aLi[0].offsetWidth + 13) + oUl.offsetLeft) / aLi[0].offsetWidth);
+
+		if (n < 1) {
+			move(oUl, 'left', 0);
+		}
+		else {
+			//alert( oUl.offsetLeft +" " + now +" "+aLi[0].offsetWidth+" "+liw);
+			move(oUl, 'left', oUl.offsetLeft + now);
+		}
+	}
+	oBtnLeft.onclick = function () {
+		var now1 = -Math.floor((aLi.length / 1)) * 1 * (aLi[0].offsetWidth + 36);
+
+		if (oUl.offsetLeft > 0) {
+			alert(now1+" "+aLi[0].offsetWidth);
+			move(oUl, 'left', -6150);
+		}
+		else {
+			move(oUl, 'left', oUl.offsetLeft - now);
+		}
+	}
+	var timer = setInterval(oBtnRight.onclick, 25000);
+	oDiv.onmouseover = function () {
+		clearInterval(timer);
+	}
+	oDiv.onmouseout = function () {
+		timer = setInterval(oBtnRight.onclick, 25000);
+	}
+
+function getStyle(obj, name) {
+	if (obj.currentStyle) {
+		return obj.currentStyle[name];
+	}
+	else {
+		return getComputedStyle(obj, false)[name];
+	}
+}
+
+function move(obj, attr, iTarget) {
+	clearInterval(obj.timer)
+	obj.timer = setInterval(function () {
+		var cur = 0;
+		if (attr == 'opacity') {
+			cur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+		}
+		else {
+			cur = parseInt(getStyle(obj, attr));
+		}
+		var speed = (iTarget - cur) / 6;
+		speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+		if (iTarget == cur) {
+			clearInterval(obj.timer);
+		}
+		else if (attr == 'opacity') {
+			obj.style.filter = 'alpha(opacity:' + (cur + speed) + ')';
+			obj.style.opacity = (cur + speed) / 100;
+		}
+		else {
+			obj.style[attr] = cur + speed + 'px';
+		}
+	}, 30);
+} 
+})
+</script>
+</eq>
+<include file="Common/footer" />
+<div class="right nav_right">
+	<ul>
+		<li class="nr_item qq"><a href="http://wpa.qq.com/msgrd?v=3&uin={$company.qq}&site=qq&menu=yes" target="_blank"><img src="__PUBLIC__/home/img/icon/qq.png"/></a></li>
+		<li class="nr_item weixin">
+			<a href="#"><img src="__PUBLIC__/home/img/icon/weixin.png"/></a>
+			<span class="mui-icon weixingerweima" id="weixingerweima"><img src="__ROOT__/{$company.qr}" alt="" /></span>
+		</li>
+		<li class="nr_item severs">
+			<a href="#"><img src="__PUBLIC__/home/img/icon/severs.png"/></a>
+			<span class="tell">{$company.phone}</span>
+		</li>
+		<li class="top"><a href="#"><img src="__PUBLIC__/home/img/icon/top.png"/></a></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	<!--右侧导航栏js-->
+	$(document).ready(function(){
+		$('.qq').hover(function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/qq_on.png')
+		},function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/qq.png')
+		});
+		$('.weixin').hover(function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/weixin_on.png')
+		},function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/weixin.png')
+		});
+		$('.severs').hover(function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/severs_on.png')
+		},function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/severs.png')
+		});
+		$('.top').hover(function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/top_on.png')
+		},function(){
+			$(this).find('a img').attr('src','__PUBLIC__/home/img/icon/top.png')
+		});
+		$('.prev,.next').parent().css('background-color','#fff');
+		$(window).scroll(function(){
+			var top=$('.nav_right .top');
+			 var winH = $(window).height();//可视窗口高度
+			 var iTop = $(window).scrollTop();//鼠标滚动的距离
+			if(iTop>=winH){
+				$('.nr_item').css('bottom','70px');
+				top.fadeIn();
+			 }else{
+				$('.nav_right').css('bottom','0px');
+				top.fadeOut();
+			 }
+		});
+		$('.nav_right .top').click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+		return false;
+	});
+	})
+	var w=$(window).width();
+	if(w==1024||w==1280){
+		$('.content').css({'width':'100%','max-width':'900px'});
+		$('.build-text').css({'width':'340px','height':'289px','overflow':'hidden'});
+		$('.bicycle .imgs:after').css('left','0');
+		$('#industrial .img,#industrial .des_text').css('width','45%');
+		$('.des_text,.smallapp .img').css('margin-left','72px');
+		$('.sound:after').css('height','448px');
+		$('.ider').css({'margin':'30% 10%'});
+		$('.ider li.id3').css('margin-top','250px');
+		$('.desc_show').css({'width':'100%','height':'647px'});
+		$('#carousel1').css({'width':'100%'});
+		$('#carousel1 div').css('left','-10%');
+		$('#plane div.maindiv0').css('margin-left','0');
+		$('#goleft').css({'bottom':'-38%','right':'17%'});
+		$('.number1-3').css({'bottom':'-35%','right':'2%'});
+		$('#goright').css({'bottom':'-36%','right':'-2%'});
+		$('.pro_item p.pro_name').css('margin-left','9%');
+		$('.pHeight .right-35').css('left','36%');
+		$('.top-34').css('top','22%');
+		$('p.pro_name').css('padding','0 18%');
+		$('.pro_item  p.pro_name').css('padding','0 12%');
+		$('#carousel1 .btns').css('width','11%');
+		$('.des_text h5').css('margin-top','40px');
+		$('.smallapp_pro .des_text').css('margin-left','0');
+		$('.smallapp_pro').css('margin-top','-60%');
+		$('.padding-134').css('height','279px');
+		$('.person_describ:nth-child(even) .text, .new_describ:nth-child(even) .text').css('margin-right','3%');
+		$('.person_describ .text').css('width','54%');
+		$('#website .item').css('margin','12% 10% 0 10%');
+		$('#website .item-text, #website .item').css('margin','21px 10%');
+		$('#photograhy .ph_content .tab_menu').removeClass('margin-124');
+		$('#photograhy .ph_content').css({'max-width':'900px'});
+		$('.c_item').css({'width':'100px','height':'100px','font-size':'25px','line-height':'100px','margin-left':'30%','padding':'0'});
+		$('.lHeight').css('height','254px');
+		$('.bicycle h5').css('margin','50px auto');
+		$('.bicycle a').css('margin-bottom','96px');
+		$('.join_mesege').css({'margin':'12% auto','height':'556px'});
+		$('.close').css('margin-right','0');
+		$('.mesege').css('margin','25px 5%');
+		$('#us .logo').css('margin','13px auto');
+		$('.right_icon span').css('margin-top','-2px');
+	}else{
+		$('.content').css({'width':'100%','max-width':'1280px'});
+	}
+</script>

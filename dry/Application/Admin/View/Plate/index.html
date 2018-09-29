@@ -1,0 +1,77 @@
+<extend name="Index/index" />
+
+<block name="content">
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	 <h3>板块管理</h3>
+	 <a href="form" class="btn btn-info">添加板块</a>
+	 <div class=" panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		    <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group table-responsive" role="tablist">
+					<foreach name="plate_list" item="plate" key="k">
+                    <div class="panel panel-primary leftMenu">						
+                        <!-- 利用data-target指定要折叠的分组列表 -->						
+                        <div class="panel-heading" id="collapseListGroupHeading{$k}" data-toggle="collapse" data-target="#collapseListGroup{$k}" role="tab" >
+                            <h4 class="panel-title">
+                                {$plate[name]}
+								<span class="badge">
+								<a href="__URL__/form/id/{$plate[id]}">编辑</a>
+							    <a href="__URL__/delete/id/{$plate[id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+								</span>
+                                
+                        </div>
+						
+                        <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                        <div style="font-size:14px;" id="collapseListGroup{$k}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading{$k}">
+                            <ul class="list-group">
+							<foreach name="plate.child" item="child">
+                              <li class="list-group-item">
+                                <!-- 利用data-target指定URL -->                               
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$child[name]}
+									<span class="pull-right">
+									<a href="__URL__/form/id/{$child[id]}">编辑</a>
+									<a href="__URL__/delete/id/{$child[id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+									</span>
+                              </li>
+							  <foreach name="child.child" item="childer">
+							  <li class="list-group-item">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$childer[name]}
+									<span class="pull-right">
+									<a href="__URL__/form/id/{$childer[id]}">编辑</a>
+									<a href="__URL__/delete/id/{$childer[id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+									</span>				
+                              </li>	
+							  <?php foreach($childer['child'] as $k => $v){?>
+							  <li class="list-group-item">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $v[name]; ?>
+									<span class="pull-right">
+									<a href="__URL__/form/id/<?php echo $v[id]; ?>">编辑</a>
+									<a href="__URL__/delete/id/<?php echo $v[id]; ?>" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+									</span>				
+                              </li>	
+							  <?php } ?>
+							  </foreach>
+							  
+							</foreach>
+                            </ul>
+                        </div>
+                    </div><!--panel end-->
+					</foreach> 
+                </div>
+            </div>         
+        </div> 
+	</div>
+  </div>
+</div>
+<script>
+$(function(){
+	$(".panel-heading").click(function(e){
+		/*切换折叠指示图标*/
+		$(this).find("span").toggleClass("glyphicon-chevron-down");
+		$(this).find("span").toggleClass("glyphicon-chevron-up");
+	});
+});
+</script>
+</block>
+

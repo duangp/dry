@@ -1,0 +1,14 @@
+.detail{width: 80%;margin: 0 auto;}
+.detail div{width: 100%; margin: 0 auto;}
+.margin-270{margin: 270px auto;}
+.detail div img{width:100%;margin: 0 auto;}
+.width-80{width: 80%!important;margin: 0 auto;}
+.width-90{width: 90%!important;margin: 0 auto;}
+.margin-186{margin: 186px auto!important;}
+.margin-116{margin: 116px auto!important;}
+.prev,.next,.return{width: 30px; height:30px;}
+.prev img,.next img,.return img{width: 100%;}
+#Dpage{position: fixed;right: 28px;}
+#Dpage li{
+	margin-top: 28px;
+}

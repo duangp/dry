@@ -1,0 +1,68 @@
+<extend name="Index/index" />
+
+<block name="content">
+     <div class="col-md-12 span_3">	 
+		  <div class="bs-example1" data-example-id="contextual-table">
+		  <h2>公司信息</h2>
+		  <form action="update" enctype="multipart/form-data" method="post">
+		    <table class="table">
+		      <tbody>
+		        <tr class="active">
+		          <td><h5>公司名称</h5></td>
+		          <td><input type="text" name="company_name" class="form-control" placeholder="请输入公司名称" value="{$company.company_name}"></td>
+		        </tr>
+		        <tr>
+		          <td scope="row"><h5>联系方式</h5></td>
+		          <td><input type="text" name="phone" class="form-control" placeholder="请输入联系方式" value="{$company.phone}"></td>
+		        </tr>
+		        <tr class="warning">
+		          <td scope="row"><h5>QQ</h5></td>
+		          <td><input type="text" name="qq" class="form-control" placeholder="请输入QQ号" value="{$company.qq}"></td>
+		        </tr>
+		        <tr>
+		          <td scope="row"><h5>关键词</h5></td>
+		          <td><textarea class="form-control" name="keyword" rows="3" placeholder="请输入关键词" >{$company.keyword}</textarea></td>
+		        </tr>
+		        <tr class="success">
+		          <td scope="row"><h5>公司地址</h5></td>
+		          <td><input type="text" name="address" class="form-control" placeholder="请输入公司地址" value="{$company.address}"></td>
+		        </tr>
+		        <tr>
+		          <td scope="row"><h5>公司简介</h5></td>
+		          <td><textarea class="form-control" name="profile" rows="3" placeholder="请输入公司简介" >{$company.profile}</textarea></td>
+		        </tr>
+		        <tr class="info">
+		          <td scope="row"><h5>备案信息</h5></td>
+		          <td><input type="text" name="information" class="form-control" placeholder="请输入备案信息" value="{$company.information}"></td>
+		        </tr>
+		        <tr class="">
+		          <td scope="row"><h5>logo</h5></td>
+		          <td><input type="file" id="inputfile" name="logo"></td>				  
+		        </tr>
+		        <tr class="">
+		          <td scope="row"></td>
+		          <td><img src="../../{$company.logo}" width="200"/></td>				  
+		        </tr>
+		        <tr class="danger">
+		          <td scope="row"><h5>微信二维码</h5></td>
+		          <td><input type="file" id="inputfile" name="qr"></td>				  
+		        </tr>
+		        <tr>
+		          <td scope=""></td>
+		          <td><img src="../../{$company.qr}" width="200"/></td>				  
+		        </tr>
+		        <tr class="warning">
+		          <td scope="row"><h5>网站域名</h5></td>
+		          <td><input type="text" name="link" class="form-control" placeholder="请输入网站域名" value="{$company.link}"></td>				  
+		        </tr>
+				<tr>
+				  <td><input type="hidden" name="company_id" value="{$company.company_id}"/></td>
+				  <td><button type="submit" class="btn btn-primary">保存</button></td>
+				</tr>
+		      </tbody>
+		    </table>
+			</form>
+		   </div>
+	   </div>
+
+</block>

@@ -1,0 +1,58 @@
+<extend name="Index/index" />
+
+<block name="content">	
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	 <h3>管理员列表</h3>
+	 <a href="__URL__/form" class="btn fb1" style="color:white;">添加管理员</a>
+  	<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		<div class="panel-body no-padding">
+			<table class="table table-striped">
+				<thead>
+					<tr class="warning">						
+						<th>账号名</th>
+					    <th>部门</th>
+					    <th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<in name="Think.session.uid" value="1,2">
+					<foreach name="manager_list" item="manager">
+					<neq name="manager.user_id" value="1">
+					<tr>
+						<td>{$manager[username]}</td>
+						<td>{$manager[level]}</td>						
+						<td>
+						  <a href="__URL__/form/id/{$manager[user_id]}">编辑</a>
+						  <a href="__URL__/delete/id/{$manager[user_id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+						</td>						
+					</tr>
+					</neq>
+					</foreach>
+					</in>
+					<notin name="Think.session.uid" value="1,2">
+					<foreach name="manager_list" item="manager">
+					<neq name="manager.user_id" value="1">
+					<tr>
+						<td>{$manager[username]}</td>
+						<td>{$manager[level]}</td>						
+						<td>
+						  <eq name="manager.user_id" value="$Think.session.uid">
+						  <a href="__URL__/form/id/{$manager[user_id]}">编辑</a>
+						  </eq>
+						  <!-- <a href="__URL__/delete/id/{$manager[user_id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a> -->
+						</td>						
+					</tr>
+					</neq>
+					</foreach>
+					</notin>
+				</tbody>
+			</table>
+		</div>
+		<ul class="pagination">
+			{$page}
+		</ul>
+	</div>	
+  </div>
+</div>  
+</block>

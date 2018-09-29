@@ -1,0 +1,38 @@
+<extend name="Index/index" />
+
+<block name="content">	
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	<h3>用户留言</h3>
+  	<div class="bs-example4" data-example-id="contextual-table">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>姓名</th>
+		  <th>联系方式</th>
+		  <th>留言内容</th>
+		  <th>留言时间</th>
+		  <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>	  
+        <foreach name="message_list" item="message">
+			<tr>
+			  <td>{$message[message_name]}</td>
+			  <td>{$message[message_phone]}</td>
+			  <td>{$message[message_content]}</td>
+			  <td>{:date('Y-m-d H:i:s',$message['add_time'])}</td>
+			  <td>
+			  <a href="__URL__/delete/id/{$message[message_id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+			  </td>
+			</tr>
+		</foreach>
+      </tbody>
+    </table>
+   </div>
+ </div>
+ <ul class="pagination">
+	{$page}
+ </ul>
+</div>
+</block>

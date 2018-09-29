@@ -1,0 +1,98 @@
+<extend name="Index/index" />
+
+<block name="content">
+<load href="__PUBLIC__/admin/assets/design/css/trumbowyg.css" />
+<load href="__PUBLIC__/admin/assets/trumbowyg.js" />
+<style>
+body li { list-style: none; }
+tr td ul{float:left;}
+</style>
+	<div class="bs-example1" data-example-id="contextual-table">	
+	<form action="__CONTROLLER__/{$action}" enctype="multipart/form-data" method="post">
+	<table class="table">
+	  <thead>	  
+		<tr>
+			<eq name="action" value="add">
+			<h3>添加招聘</h3>
+			</eq>
+			<eq name="action" value="update">
+			<h3>修改招聘</h3>
+			</eq>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">工作岗位</span>
+            <input type="text" class="form-control" name="recruit_name" placeholder="请输入工作岗位" value="{$recruit_one.recruit_name}">
+          </div>
+		</tr>
+		<tr>
+		  <div class="input-group">
+            <span class="input-group-addon">职位类别</span>
+            <input type="text" class="form-control" name="job" placeholder="请输入职位类别" value="{$recruit_one.job}">
+          </div>
+		</tr>
+		<tr>
+		  <div class="input-group">
+            <span class="input-group-addon">工作地点</span>
+            <input type="text" class="form-control" name="place" placeholder="请输入工作地点" value="{$recruit_one.place}">
+          </div>
+		</tr>
+		<tr>
+		  <div class="input-group">
+            <span class="input-group-addon">招聘人数</span>
+            <input type="text" class="form-control" name="number" placeholder="请输入招聘人数" value="{$recruit_one.number}">
+          </div>
+		</tr>
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">联系电话</span>
+            <input type="text" class="form-control" name="phone" placeholder="请输入联系电话" value="{$recruit_one.phone}">
+          </div>
+		</tr>
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">公司地址</span>
+            <input type="text" class="form-control" name="address" placeholder="请输入公司地址" value="{$recruit_one.address}">
+          </div>
+		</tr>
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">排序</span>
+            <input type="text" class="form-control" name="recruit_order" placeholder="请输入排序" value="{$recruit_one.recruit_order}">
+          </div>
+		</tr>		
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">文章详情</span>
+            <div onmousedown="show_element(event)" style="clear:both" id="customized-buttonpane" class="editor" ><?php echo htmlspecialchars_decode($recruit_one['customized-buttonpane']);?></div>
+          </div>
+		</tr>		
+		<tr class="info">
+		  <div class="input-group">
+            <span class="input-group-addon">是否显示</span>            
+          </div>
+		  <div class="radio">
+				<label>
+					<input type="radio" name="is_show" value="0" <eq name="recruit_one[is_show]" value="0">checked</eq> <eq name="recruit_one[is_show]" value="">checked</eq>>是
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="is_show" value="1" <eq name="recruit_one[is_show]" value="1">checked</eq>>否
+				</label>
+			</div>
+		</tr>		
+		<tr>
+		  <input type="hidden" name="action" value="{$action}"/>
+		  <input type="hidden" name="recruit_id" value="{$recruit_one.recruit_id}"/>
+		  <td><button type="submit" class="btn btn-primary">提交</button></td>
+		</tr>
+	  </tbody>
+	</table>
+	</form>
+	</div>
+
+</block>
+

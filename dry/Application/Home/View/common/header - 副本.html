@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="{$company.keyword}" />
+    <block name="title">
+	<title>
+	<neq name="plate_one.plate_name" value="">
+	{$plate_one.plate_name}
+	<else/>
+	{$company.company_name}
+	</neq>
+	</title>
+	</block>
+   <!--fonts-->
+	<link rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" />
+	<!--css-->
+	<link rel="stylesheet" href="__PUBLIC__/home/css/style.css" />
+	
+	<!--js-->
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery-2.1.4.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/home/js/bootstrap.min.js" ></script>
+</head>
+<body>
+

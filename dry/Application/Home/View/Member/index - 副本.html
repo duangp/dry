@@ -1,0 +1,17 @@
+<include file="Common/header"/>
+你好，{$member.member_phone}
+<a href="__APP__/Goods/index/code/{$member.code}">推广码</a>
+<div>我的下级：
+<foreach name="next_list" item="next">
+<li><for start="0" end="$next['level']">&nbsp;&nbsp;&nbsp;&nbsp;</for>{$next[member_phone]}</li>
+</foreach>
+</div>
+<div>我的购买：
+<foreach name="buy_list" item="buy">
+
+</foreach>
+</div>
+<div>
+我的余额：{$member[member_money]}
+</div>
+<include file="Common/footer"/>

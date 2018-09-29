@@ -1,0 +1,71 @@
+<extend name="Index/index" />
+
+<block name="content">
+<load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
+<load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	<!-- <h3>会员列表</h3> -->
+    <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		<div class="panel-heading">
+			<h2>提现明细</h2>
+			<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+		</div>
+		<div class="panel-body no-padding" style="display: block;">
+			<table class="table table-striped">
+				<thead>
+					<tr class="warning">
+						<th>账号</th>
+						<th>会员名</th>
+						<th>提现金额</th>
+						<th>提现方式</th>
+						<th>是否成功</th>
+						<th>提现时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="put_list" item="put">
+					<tr>
+						<td>
+						<foreach name="member_list" item="member">
+						<eq name="member.member_id" value="$put.member_id">
+						{$member.member_phone}
+						</eq>
+						</foreach>
+						</td>
+						<td>
+						<foreach name="member_list" item="member">
+						<eq name="member.member_id" value="$put.member_id">
+						{$member.member_name}
+						</eq>
+						</foreach>
+						</td>
+						<td>{$put.put_money}</td>
+						<td>
+						<eq name="put.put_mode" value="1">
+						微信
+						</eq>
+						<eq name="put.put_mode" value="2">
+						支付宝
+						</eq>
+						</td>
+						<td>
+						<eq name="put.is_success" value="0">
+						失败
+						</eq>
+						<eq name="put.is_success" value="1">
+						成功
+						</eq>
+						</td>
+						<td>{:date('Y-m-d H:i:s',$put['put_time'])}</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	</div>
+</div>
+</block>
+

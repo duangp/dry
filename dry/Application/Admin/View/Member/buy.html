@@ -1,0 +1,81 @@
+<extend name="Index/index" />
+
+<block name="content">
+<load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
+<load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	<h3>会员列表</h3>
+    <a href="form" class="btn btn-info">添加会员</a>
+    <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		<div class="panel-body no-padding">
+			<table class="table table-striped">
+				<thead>
+					<tr class="warning">
+						<th>手机账号</th>
+						<th>会员名</th>
+						<th>上一级</th>
+						<th>上一级获得返现</th>
+						<th>支付方式</th>
+						<th>购买数量</th>
+						<th>单价</th>
+						<th>总价</th>
+						<th>购买时间</th>
+						<th>是否已经付款成功</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="buy_list" item="buy">
+					<tr>
+						 <td>{$buy[member_phone]}</td>
+						 <td>{$buy[member_name]}</td>
+						 <td>
+						 <foreach name="member_list" item="member">
+						 <eq name="member.member_id" value="$buy[parent_id]">
+						 {$member[member_phone]}<br>
+						 <neq name="member.member_name" value="">
+						 {$member[member_name]}
+						 </neq>
+						 </eq>
+						 </foreach>
+						 </td>
+						 <td>{$buy[back_money]}</td>
+						 <td>
+						 <eq name="buy.buy_mode" value="1">
+						 微信
+						 </eq>
+						 <eq name="buy.buy_mode" value="2">
+						 支付宝
+						 </eq>
+						 </td>
+						 <td>{$buy[goods_number]}</td>
+						 <td>{$buy[goods_price]}</td>
+						 <td>{$buy[total_price]}</td>
+						 <td>{:date('Y-m-d H:i:s',$member['pay_time'])}</td>
+						 <td>
+						 <eq name="buy.is_pay" value="0">
+						 未付款
+						 </eq>
+						 <eq name="buy.is_pay" value="1">
+						 已付款
+						 </eq>
+						 </td>
+						 <td>
+						  <a href="__URL__/form/id/{$member[member_id]}">编辑</a>
+						  <a href="__URL__/delete/id/{$member[member_id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+						 </td>
+					</tr>
+					</foreach>
+					
+				</tbody>
+			</table>
+		</div>
+		 <ul class="pagination">
+			{$page}
+		 </ul>
+	</div>
+  </div>
+</div>
+</block>
+

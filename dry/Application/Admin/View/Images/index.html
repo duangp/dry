@@ -1,0 +1,41 @@
+<extend name="Index/index" />
+
+<block name="content">
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	 <h3>首页轮播图</h3>
+	 <a href="form" class="btn btn-info">添加图片</a>
+
+    <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		<div class="panel-body no-padding">
+			<table class="table table-striped">
+				<thead>
+					<tr class="warning">
+						<th>排序</th>
+						<th>图片</th>
+						<th>文字介绍</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="images_list" item="images">
+					<eq name="images.parent_id" value="0">
+					<tr>
+						<td>{$images.img_desc}</td>
+						<td><img src="__PUBLIC__/{$images.img_url}" width="100"></td>
+						<td>{$images.img_introduce}</td>
+						<td>
+						<a href="__URL__/form/id/{$images[img_id]}">编辑</a>
+						<a href="__URL__/delete/id/{$images[img_id]}" onclick="if (!confirm('是否确认删除？')) return false;">删除</a>
+						</td>
+					</tr>
+					</eq>
+					</foreach>					
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+</div>
+</block>
+

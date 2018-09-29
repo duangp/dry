@@ -1,0 +1,81 @@
+<extend name="Index/index" />
+
+<block name="content">
+<load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
+<load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
+<!-- <load href="__PUBLIC__/admin/login/js/jquery-1.8.2.min.js" /> -->
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	<h3>会员列表</h3>
+    <!-- <a href="form" class="btn btn-info">添加会员</a> -->
+	<!-- <form role="form">
+	  <div class="form-group">
+		<label for="name">会员搜索</label>
+		<select class="form-control" name="member_id">
+		<option>请选择</option>
+		<foreach name="member_all" item="member">
+		  <option value="{$member.member_id}">{$member.member_name}</option>
+		</foreach> 
+		</select>
+	  </div>
+	</form> -->
+	<div>
+		<form class="bs-example bs-example-form" role="form">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="input-group">
+						<input type="text" class="form-control" name="search" value="" placeholder="请输入手机号">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">搜索</button>
+						</span>
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+			<!-- <div class="row">
+				<div class="col-lg-2">
+					<div class="input-group">
+						<input type="text" class="form-control" name="" value="" placeholder="请输入会员名">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">搜索</button>
+						</span>
+					</div>
+				</div>
+			</div> -->
+		</form>
+	</div>
+	<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+		<div class="panel-body no-padding">
+			<table class="table table-striped">
+				<thead>
+					<tr class="warning">
+						<th>手机账号</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+			</table>			
+			<div class="list">
+			{$member_list}
+			</div>
+		</div>
+
+	</div>
+  
+  </div>
+</div>
+<script type="text/javascript">
+$("button").on('click keydown',function(){
+	var search = $("input[name='search']").val();
+	$.ajax({
+	   type: "POST",
+	   url: "__URL__/search",
+	   data: {'search':search},
+	   dataType: "json",
+	   success: function(results){	
+			var list = results.list;
+			$(".list").html(list);								
+		  }
+	});
+})
+</script>
+</block>
+

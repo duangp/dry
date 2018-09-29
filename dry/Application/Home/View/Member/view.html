@@ -1,0 +1,34 @@
+<include file="Common/header"/>
+<link rel="stylesheet" href="__PUBLIC__/home/css/detile.css" />
+<div class="detail margin-270" >
+	<?php echo htmlspecialchars_decode($plate_one['customized-buttonpane']);?>
+</div>
+<ul class="page Theight" id="Dpage" >
+	<neq name="plate_prev.plate_id" value="">
+	<li class="prev"><a href="__CONTROLLER__/view/id/{$plate_prev.plate_id}"><img src="__PUBLIC__/home/img/Dright.png" alt="" /></a></li>
+	</neq>
+	<li class="return"><a href="__CONTROLLER__/index/id/{$parent_id}"><img src="__PUBLIC__/home/img/Dreturn.png" alt="" /></a></li>
+	<neq name="plate_next.plate_id" value="">
+	<li class="next"><a href="__CONTROLLER__/view/id/{$plate_next.plate_id}"><img src="__PUBLIC__/home/img/Dleft.png" alt="" /></a></li>
+	</neq>
+</ul>
+	<script type="text/javascript"> 
+		var wheight=$(window).height();
+		$('.Theight').css('top',wheight/2+'px');
+		 $('.prev').hover(function(){
+		 	$(this).find('img').attr('src','__PUBLIC__/home/img/Dright_on.png')
+		 },function(){
+		 	$(this).find('img').attr('src','__PUBLIC__/home/img/Dright.png')
+		 });
+		  $('.return').hover(function(){
+		 	$(this).find('img').attr('src','__PUBLIC__/home/img/Dreturn_on.png')
+		 },function(){
+		 	$(this).find('img').attr('src','__PUBLIC__/home/img/Dreturn.png')
+		 });
+		  $('.next').hover(function(){
+		 	$(this).find('img').attr('src','__PUBLIC__/home/img/Dleft_on.png')
+		 },function(){
+		 	$(this).find('img').attr('src','__PUBLIC__/home/img/Dleft.png')
+		 })		   
+	</script>
+<include file="Common/footer" />

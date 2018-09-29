@@ -1,0 +1,122 @@
+#photograhy .ph_content{
+	width: 100%!important;
+	max-width: 1920px!important;
+	margin: 0!important;
+}
+#photograhy .ph_content .margin-124{
+	margin: 124px 40%!important;
+}
+.width-100{width: 100%;}
+#photograhy .photograhy ul{
+	padding: 0;
+}
+#photograhy .photograhy ul li{
+	width: 90%;
+	display: block;
+	background-color: #f6f6f6;
+}
+#photograhy .ph_text{
+	width: 55%;
+}
+#photograhy .ph_img{
+	width: 45%;
+}
+#photograhy .ph_img img{
+	width: 100%;
+}
+#photograhy .photograhy ul li:nth-child(odd){
+	float: left;
+	left:0;
+}
+#photograhy .photograhy ul li:nth-child(even){
+	float: right;
+	right:0;
+}
+#photograhy .h_active{
+	background-color: #dcdddd;
+}
+#photograhy .h_active .btn{
+	color: #fff;
+	background-color: #000;
+}
+#photograhy .h_active .btn:after{
+	display: block;
+}
+#photograhy .btn:after{
+	display: block;
+	width: 10px;
+	height:10px;
+	color: #fff;
+	content: "→";
+	position: absolute;
+	top:0;
+	right:20px;
+	display: none;
+	
+}
+#photograhy .ph_text{
+	text-align: center;
+	margin-top: 10%;
+}
+#photograhy .ph_text p{
+	font-size: 16px;
+	text-transform: Uppercase;
+	font-weight: bold;
+	line-height: 26px;
+}
+#photograhy .ph_china{
+	display: block;
+	margin: 15px 0;
+	text-align: center;
+}
+#photograhy .btn{
+	color: #000;
+	width: 50px;
+	height:26px;
+	text-align: center;
+	line-height: 26px;
+	padding: 5px 50px;
+	border: 1px solid #000;
+	position: relative;
+}
+.eh_bg{padding: 0;width:100%;background:none;margin-top:0; }
+
+/*滚动*/
+#video .con_banner img{width: 100%;}
+div.indexmaindiv{height:auto;margin:130px auto;margin-bottom: 300px;width:100%;}
+div.indexmaindiv0{position: relative;;z-index: 7;margin-top:25px;padding-bottom: 45%;padding-top: 5%;}
+div.indexmaindiv0 div.stylesgoleft{z-index: 7;float:left;width:21px;height:28px;background:url('../img/test/arrowhead.png') no-repeat left top;margin:106px 5px 0px 0px;cursor:pointer;}
+div.indexmaindiv0 div.stylesgoleft:hover{z-index: 7;float:left;width:21px;height:28px;background:url('../img/test/arrowhead.png') no-repeat left -28px;margin:106px 5px 0px 0px;cursor:pointer;}
+
+div.indexmaindiv0 div.stylesgoright{z-index: 7;float:left;width:21px;height:28px;background:url('../img/test/arrowhead.png') no-repeat left -56px;margin:106px 0px 0px 15px;cursor:pointer;}
+div.indexmaindiv0 div.stylesgoright:hover{z-index: 7;float:left;width:21px;height:28px;background:url('../img/test/arrowhead.png') no-repeat left -84px;margin:106px 0px 0px 15px;cursor:pointer;}
+/*滚动*/
+div.maindiv0{z-index: 7;float:left;width:100%;height:auto;overflow:hidden;position:relative;margin-bottom: 10%;margin-left: 2.5%;}
+div.maindiv0 ul{z-index: 7;position:relative;left:0;top:0;height: auto;width: 100%;}
+/*滚动栏*/
+#count0{list-style:none;margin:0px;padding:0px;}
+#count0 li{position: relative;z-index: 7;float:left;width:88%;height:auto;margin-left:35px;list-style:none outside none;border: none;}
+#count0 .detailimg{z-index: 7;width:97%;height:auto;background:#FFF;padding-bottom: 60%}
+#count0 img{
+width:100%;
+height:150px;
+}
+#video .je_describ{text-align: center;margin: 138px auto;}
+#goleft{z-index: 30;background: url(255,255,255,0);border: none;padding: 0;position: absolute;bottom: -20%;right: 26%;}
+#goright{z-index: 30;background: url(255,255,255,0);border: none;padding: 0;position: absolute;bottom: -20%;right: 12%;}
+#gundongBg{position: absolute;width: 100%;z-index: 3;left: 0;}
+#gundongBg img{z-index:3;opacity: 0;}
+
+#video .img_pop:hover .pop_describ{display: block;opacity: 1;}
+#video .pop_describ{display: block;background: rgba(0, 0, 0, 0.44);width: 100%;padding-bottom: 100%;position: relative;opacity: 0;}
+
+.number1-3{display:inline-block;position: absolute;bottom: -18%;right: 15%;z-index: 8;font-size: 3.5em;font-family: -webkit-pictograph;}
+.bigNumber{ font-size: 1.8em;}
+.worksShow{background:none;position:relative;width:100%;padding-bottom: 56.5%;}
+#video .img_pop{background-size: 100% 100%;position: absolute;}
+#video .pop_describ h3{position: absolute;width: 100%;top: 33%;color: white;font-size: 2.2em;font-weight: 400;letter-spacing: 3px;text-align: center!important;}
+#video .pop_describ a{width: 100%;position: absolute;top: 60%;text-align: center;}
+#video .pop_describ a button{border-radius: 10em;border: 2px solid white;background: rgba(1,1,1,0);color: white;letter-spacing: 2px;font-size: 0.4em;padding: 0.1em 1em;}
+#video .pop_describ a.btn{border: none!important;}
+
+
