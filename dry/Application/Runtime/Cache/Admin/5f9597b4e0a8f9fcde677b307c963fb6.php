@@ -125,10 +125,31 @@
         <div id="page-wrapper">
 		<!-- 中间编辑栏 -->
 		
-        <div class="col-md-12 span_3">
-		  <img src="/dry/dry/Public/admin/themes/images/1.png" width="100%">
-	    </div>
-	   
+    <link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/jqueryTreescroll/css/tree.css" />
+    <script type="text/javascript" src="/dry/dry/Public/admin/jqueryTreescroll/js/treescroll.min.js"></script>
+    <!-- <script type="text/javascript" src="/dry/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script> -->
+    <div class="col-md-12 graphs">
+<table>
+    <tr>
+        <td>年</td>
+        <td>月</td>
+        <td>target</td>
+        <td>Pos.Plates</td>
+        <td>Neg.Plates</td>
+    </tr>
+    <form action="/dry/dry/admin.php/Platescraprate/add" enctype="multipart/form-data" method="post">
+            <tr>
+                <td><input type="text" name="psr_year"></td>
+                <td><input type="text" name="psr_month"></td>
+                <td><input type="text" name="target"></td>
+                <td><input type="text" name="pos_plates"></td>
+                <td><input type="text" name="neg_plates"></td>
+            </tr>
+        <input type="submit" name="提交">
+    </form>
+</table>
+</div>
+
 	   </div>
       <!-- /#page-wrapper -->
    </div>

@@ -13,9 +13,9 @@
         <!-- CSS -->
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
         <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-		<link rel="stylesheet" type="text/css" href="/dry/Public/admin/login/css/reset.css" />	
-		<link rel="stylesheet" type="text/css" href="/dry/Public/admin/login/css/supersized.css" />	
-		<link rel="stylesheet" type="text/css" href="/dry/Public/admin/login/css/style.css" />	
+		<link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/login/css/reset.css" />	
+		<link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/login/css/supersized.css" />	
+		<link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/login/css/style.css" />	
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,10 +37,10 @@
 
 
         <!-- Javascript -->
-		<script type="text/javascript" src="/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script>
-		<script type="text/javascript" src="/dry/Public/admin/login/js/supersized.3.2.7.min.js"></script>
-		<script type="text/javascript" src="/dry/Public/admin/login/js/supersized-init.js"></script>
-		<script type="text/javascript" src="/dry/Public/admin/login/js/scripts.js"></script>
+		<script type="text/javascript" src="/dry/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="/dry/dry/Public/admin/login/js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="/dry/dry/Public/admin/login/js/supersized-init.js"></script>
+		<script type="text/javascript" src="/dry/dry/Public/admin/login/js/scripts.js"></script>
 
     </body>
 

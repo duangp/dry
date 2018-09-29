@@ -8,17 +8,17 @@ class GoodsController extends Controller {
 		if(!empty($session)){
 			$Goods = M("Goods");
 			$goods = $Goods->limit('1')->find();
-			
+
 			$Images = M("Images");
 			$images_list = $Images->where("parent_id = ".$goods['goods_id'])->select();
 			// print_r($images_list);exit;
-			
+
 			$goods['url'] = 'goods/index/id/'.$goods['goods_id']; //二维码内容
-			
+
 			$company = M('Company')->find();
 			$this->assign('company',$company);
-			$this->assign('goods',$goods);	
-			$this->assign('images_list',$images_list);		
+			$this->assign('goods',$goods);
+			$this->assign('images_list',$images_list);
 			$this->display();
 		}else{
 			$this->redirect('Index/index');

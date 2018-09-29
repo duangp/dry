@@ -5,7 +5,7 @@ class IndexController extends Controller {
     public function index(){
 		$session = session('username');
 		if(!empty($session)){
-			$company = M('Company')->find();
+			$company = M('user')->find();
 			// print_r($company);exit;
 			$this->assign('company',$company);			
 			$this->display();
