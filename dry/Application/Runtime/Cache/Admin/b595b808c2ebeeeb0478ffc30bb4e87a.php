@@ -114,6 +114,15 @@
                                 <li>
                                     <a href="/dry/dry/admin.php/drybatteryoutput/index">干电池产量月报表</a>
                                 </li>
+                                <li>
+                                    <a href="/dry/dry/admin.php/assemblyscraprate/index">组装报废率月报表</a>
+                                </li>
+                                <li>
+                                    <a href="/dry/dry/admin.php/yieldproduction/index">化成产量月报表</a>
+                                </li>
+                                <li>
+                                    <a href="/dry/dry/admin.php/discardedppm/index">化成报废PPM月报表</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

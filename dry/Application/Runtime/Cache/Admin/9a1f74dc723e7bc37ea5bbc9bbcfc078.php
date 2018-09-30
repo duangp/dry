@@ -137,31 +137,38 @@
         <div id="page-wrapper">
 		<!-- 中间编辑栏 -->
 		
-    <link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/jqueryTreescroll/css/tree.css" />
-    <script type="text/javascript" src="/dry/dry/Public/admin/jqueryTreescroll/js/treescroll.min.js"></script>
-    <!-- <script type="text/javascript" src="/dry/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script> -->
     <div class="col-md-12 graphs">
-<div>
-    <a href="/dry/dry/admin.php/Yieldproduction/add">增加</a>
-</div>
-<div>
-    <table>
-        <tr>
-            <td>年</td>
-            <td>月</td>
-            <td>fna</td>
-            <td>shp</td>
-        </tr>
-        <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$info): $mod = ($i % 2 );++$i;?><tr>
-                <td><?php echo ($info["yp_year"]); ?></td>
-                <td><?php echo ($info["yp_month"]); ?></td>
-                <td><?php echo ($info["fna"]); ?></td>
-                <td><?php echo ($info["shp"]); ?></td>
-                <td><a href="/dry/dry/admin.php/Yieldproduction/update/id/<?php echo ($info["yp_id"]); ?>">更新</a>/<a href="/dry/dry/admin.php/Yieldproduction/del/id/<?php echo ($info["yp_id"]); ?>">删除</a></td>
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-    </table>
-</div>
-
+        <div class="xs">
+            <h3>化成产量月报表</h3>
+            <div style="color:white;padding-bottom: 20px;padding-left: 95%;">
+                <a href="/dry/dry/admin.php/Yieldproduction/add"  style="color:white;" class="btn fb1" >增加</a>
+            </div>
+            <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr class="warning">
+                            <td>年</td>
+                            <td>月</td>
+                            <td>fna</td>
+                            <td>shp</td>
+                            <td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php if(in_array(($_SESSION['uid']), explode(',',"1,2"))): if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$info): $mod = ($i % 2 );++$i;?><tr>
+                                        <td><?php echo ($info["yp_year"]); ?></td>
+                                        <td><?php echo ($info["yp_month"]); ?></td>
+                                        <td><?php echo ($info["fna"]); ?></td>
+                                        <td><?php echo ($info["shp"]); ?></td>
+                                        <td><a href="/dry/dry/admin.php/Yieldproduction/update/id/<?php echo ($info["yp_id"]); ?>" >更新</a>/<a href="/dry/dry/admin.php/Yieldproduction/del/id/<?php echo ($info["yp_id"]); ?>">删除</a></td>
+                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </form><?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
 	   </div>

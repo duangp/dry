@@ -117,6 +117,12 @@
                                 <li>
                                     <a href="/dry/dry/admin.php/assemblyscraprate/index">组装报废率月报表</a>
                                 </li>
+                                <li>
+                                    <a href="/dry/dry/admin.php/yieldproduction/index">化成产量月报表</a>
+                                </li>
+                                <li>
+                                    <a href="/dry/dry/admin.php/discardedppm/index">化成报废PPM月报表</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -131,29 +137,68 @@
         <div id="page-wrapper">
 		<!-- 中间编辑栏 -->
 		
-    <link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/jqueryTreescroll/css/tree.css" />
-    <script type="text/javascript" src="/dry/dry/Public/admin/jqueryTreescroll/js/treescroll.min.js"></script>
-    <!-- <script type="text/javascript" src="/dry/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script> -->
     <div class="col-md-12 graphs">
-<table>
-    <tr>
-        <td>年</td>
-        <td>月</td>
-        <td>target</td>
-        <td>Actual</td>
+        <div class="xs">
+            <h3>新增组装报废率月报表</h3>
 
-    </tr>
-    <form action="/dry/dry/admin.php/Assemblyscraprate/add" enctype="multipart/form-data" method="post">
-            <tr>
-                <td><input type="text" name="asr_year"></td>
-                <td><input type="text" name="asr_month"></td>
-                <td><input type="text" name="target"></td>
-                <td><input type="text" name="actual"></td>
-            </tr>
-        <input type="submit" name="提交">
-    </form>
-</table>
-</div>
+            <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr class="warning">
+                            <th>年份</th>
+                            <th>月份</th>
+                            <th>target</th>
+                            <th>Actual</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php if(in_array(($_SESSION['uid']), explode(',',"1,2"))): ?><form action="/dry/dry/admin.php/Assemblyscraprate/add" enctype="multipart/form-data" method="post">
+                                <tr>
+                                    <td>
+                                        <select name="asr_year">
+                                            <option value ="2018">2018</option>
+                                            <option value ="2019">2019</option>
+                                            <option value ="2020">2020</option>
+                                            <option value ="2021">2021</option>
+                                            <option value ="2022">2022</option>
+                                            <option value ="2023">2023</option>
+                                            <option value ="2024">2024</option>
+                                            <option value ="2025">2025</option>
+                                            <option value ="2026">2026</option>
+                                            <option value ="2027">2028</option>
+                                            <option value ="2029">2029</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="asr_month">
+                                            <option value ="1">1</option>
+                                            <option value ="2">2</option>
+                                            <option value ="3">3</option>
+                                            <option value ="4">4</option>
+                                            <option value ="5">5</option>
+                                            <option value ="6">6</option>
+                                            <option value ="7">7</option>
+                                            <option value ="8">8</option>
+                                            <option value ="9">9</option>
+                                            <option value ="10">10</option>
+                                            <option value ="11">11</option>
+                                            <option value ="12">12</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" name="target" value="<?php echo ($info["target"]); ?>"></td>
+                                    <td><input type="text" name="actual" value="<?php echo ($info["pos_plates"]); ?>"></td>
+                                </tr><?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="padding-bottom: 20px;padding-left: 95%;">
+                    <input type="submit" class="btn fb1" style="color:white;" name="提交">
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
 
 	   </div>
       <!-- /#page-wrapper -->

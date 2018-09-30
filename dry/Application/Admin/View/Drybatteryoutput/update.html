@@ -1,26 +1,71 @@
-<!doctype html>
+
+
+
+
 <extend name="Index/index" />
 
 <block name="content">
-    <load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
-    <load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
-    <!-- <load href="__PUBLIC__/admin/login/js/jquery-1.8.2.min.js" /> -->
     <div class="col-md-12 graphs">
-<table>
-    <tr>
-        <td>年</td>
-        <td>月</td>
-        <td>DUF</td>
-    </tr>
-    <form action="__ACTION__/id/{$info.dbo_id}" enctype="multipart/form-data" method="post">
-            <tr>
-                <td><input type="text" name="dbo_year" value="{$info.dbo_year}"></td>
-                <td><input type="text" name="dbo_month" value="{$info.dbo_month}"></td>
-                <td><input type="text" name="duf" value="{$info.duf}"></td>
-            </tr>
-        <input type="submit" name="提交">
-    </form>
-</table>
+        <div class="xs">
+            <h3>修改干电池产量月报表</h3>
 
+            <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr class="warning">
+                            <td>年</td>
+                            <td>月</td>
+                            <td>DUF</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <in name="Think.session.uid" value="1,2">
+                            <form action="__ACTION__/id/{$info.dbo_id}" enctype="multipart/form-data" method="post">
+                                <tr>
+                                    <td>
+                                        <select name="dbo_year">
+                                            <option value ="2018">2018</option>
+                                            <option value ="2019">2019</option>
+                                            <option value ="2020">2020</option>
+                                            <option value ="2021">2021</option>
+                                            <option value ="2022">2022</option>
+                                            <option value ="2023">2023</option>
+                                            <option value ="2024">2024</option>
+                                            <option value ="2025">2025</option>
+                                            <option value ="2026">2026</option>
+                                            <option value ="2027">2028</option>
+                                            <option value ="2029">2029</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="dbo_month">
+                                            <option value ="1">1</option>
+                                            <option value ="2">2</option>
+                                            <option value ="3">3</option>
+                                            <option value ="4">4</option>
+                                            <option value ="5">5</option>
+                                            <option value ="6">6</option>
+                                            <option value ="7">7</option>
+                                            <option value ="8">8</option>
+                                            <option value ="9">9</option>
+                                            <option value ="10">10</option>
+                                            <option value ="11">11</option>
+                                            <option value ="12">12</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" name="duf" value="{$info.duf}"></td>
+
+                                </tr>
+                        </in>
+                        </tbody>
+                    </table>
+                    <div style="padding-bottom: 20px;padding-left: 95%;">
+                        <input type="submit" class="btn fb1" style="color:white;" name="提交">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </block>

@@ -6,7 +6,7 @@ class LoginController extends Controller {
 		// 判断提交方式
         if (IS_POST) {
             // 实例化Login对象
-            $login = D('user');
+            $login = D('admin_users');
             // 自动验证 创建数据集
             if (!$data = $login->create()) {
                 // 防止输出中文乱码
@@ -16,12 +16,12 @@ class LoginController extends Controller {
             // 组合查询条件
             $where = array();
             $where['username'] = $data['username'];
-            $result = $login->where($where)->field('user_id,user_name,password')->find();
+            $result = $login->where($where)->field('user_id,username,password')->find();
             // 验证用户名 对比 密码
             if ($result && $result['password'] == $data['password']) {
                 // 存储session
                 session('uid', $result['user_id']);          // 当前用户id
-                session('username', $result['user_name']);   // 当前用户名
+                session('username', $result['username']);   // 当前用户名
                 // 更新用户登录信息
                 $where['userid'] = session('uid');
                 $this->success('登录成功,正跳转至系统首页...', U('Index/index'));

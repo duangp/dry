@@ -1,34 +1,48 @@
+
+
+
+
+
 <extend name="Index/index" />
 
 <block name="content">
-    <load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
-    <load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
-    <!-- <load href="__PUBLIC__/admin/login/js/jquery-1.8.2.min.js" /> -->
     <div class="col-md-12 graphs">
-<div>
-    <a href="__CONTROLLER__/add">增加</a>
-</div>
-<div>
-    <table>
-        <tr>
-            <td>年</td>
-            <td>月</td>
-            <td>target</td>
-            <td>Pos.Plates</td>
-            <td>Neg.Plates</td>
-        </tr>
-        <volist name="info" id='info'>
-            <tr>
-                <td>{$info.psr_year}</td>
-                <td>{$info.psr_month}</td>
-                <td>{$info.target}</td>
-                <td>{$info.pos_plates}</td>
-                <td>{$info.neg_plates}</td>
-                <td><a href="__CONTROLLER__/update/id/{$info.psr_id}">更新</a>/<a href="__CONTROLLER__/del/id/{$info.psr_id}">删除</a></td>
-            </tr>
-        </volist>
-    </table>
-</div>
-
+        <div class="xs">
+            <h3>极板涂片报废率月报表</h3>
+            <div style="color:white;padding-bottom: 20px;padding-left: 95%;">
+                <a href="__CONTROLLER__/add"  style="color:white;" class="btn fb1" >增加</a>
+            </div>
+            <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr class="warning">
+                            <td>年</td>
+                            <td>月</td>
+                            <td>target</td>
+                            <td>Pos.Plates</td>
+                            <td>Neg.Plates</td>
+                            <td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <in name="Think.session.uid" value="1,2">
+                            <volist name="info" id='info'>
+                                <tr>
+                                    <td>{$info.psr_year}</td>
+                                    <td>{$info.psr_month}</td>
+                                    <td>{$info.target}</td>
+                                    <td>{$info.pos_plates}</td>
+                                    <td>{$info.neg_plates}</td>
+                                    <td><a href="__CONTROLLER__/update/id/{$info.psr_id}">更新</a>/<a href="__CONTROLLER__/del/id/{$info.psr_id}">删除</a></td>
+                                </tr>
+                            </volist>
+                            </form>
+                        </in>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </block>
