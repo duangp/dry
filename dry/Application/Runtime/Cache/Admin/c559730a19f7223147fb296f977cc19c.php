@@ -142,22 +142,22 @@
     <!-- <script type="text/javascript" src="/dry/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script> -->
     <div class="col-md-12 graphs">
 <div>
-    <a href="/dry/dry/admin.php/Yieldproduction/add">增加</a>
+    <a href="/dry/dry/admin.php/Discardedppm/add">增加</a>
 </div>
 <div>
     <table>
         <tr>
             <td>年</td>
             <td>月</td>
-            <td>fna</td>
+            <td>for</td>
             <td>shp</td>
         </tr>
         <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$info): $mod = ($i % 2 );++$i;?><tr>
-                <td><?php echo ($info["yp_year"]); ?></td>
-                <td><?php echo ($info["yp_month"]); ?></td>
-                <td><?php echo ($info["fna"]); ?></td>
+                <td><?php echo ($info["dp_year"]); ?></td>
+                <td><?php echo ($info["dp_month"]); ?></td>
+                <td><?php echo ($info["for"]); ?></td>
                 <td><?php echo ($info["shp"]); ?></td>
-                <td><a href="/dry/dry/admin.php/Yieldproduction/update/id/<?php echo ($info["yp_id"]); ?>">更新</a>/<a href="/dry/dry/admin.php/Yieldproduction/del/id/<?php echo ($info["yp_id"]); ?>">删除</a></td>
+                <td><a href="/dry/dry/admin.php/Discardedppm/update/id/<?php echo ($info["dp_id"]); ?>">更新</a>/<a href="/dry/dry/admin.php/Discardedppm/del/id/<?php echo ($info["dp_id"]); ?>">删除</a></td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
     </table>
 </div>

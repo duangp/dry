@@ -1,0 +1,28 @@
+<!doctype html>
+<extend name="Index/index" />
+
+<block name="content">
+    <load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
+    <load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
+    <!-- <load href="__PUBLIC__/admin/login/js/jquery-1.8.2.min.js" /> -->
+    <div class="col-md-12 graphs">
+<table>
+    <tr>
+        <td>年</td>
+        <td>月</td>
+        <td>for</td>
+        <td>shp</td>
+    </tr>
+    <form action="__ACTION__/id/{$info.dp_id}" enctype="multipart/form-data" method="post">
+            <tr>
+                <td><input type="text" name="dp_year" value="{$info.dp_year}"></td>
+                <td><input type="text" name="dp_month" value="{$info.dp_month}"></td>
+                <td><input type="text" name="for" value="{$info.for}"></td>
+                <td><input type="text" name="shp" value="{$info.shp}"></td>
+            </tr>
+        <input type="submit" name="提交">
+    </form>
+</table>
+
+    </div>
+</block>
