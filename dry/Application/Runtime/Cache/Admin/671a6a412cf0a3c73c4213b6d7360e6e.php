@@ -114,6 +114,9 @@
                                 <li>
                                     <a href="/dry/dry/admin.php/drybatteryoutput/index">干电池产量月报表</a>
                                 </li>
+                                <li>
+                                    <a href="/dry/dry/admin.php/assemblyscraprate/index">组装报废率月报表</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -128,10 +131,33 @@
         <div id="page-wrapper">
 		<!-- 中间编辑栏 -->
 		
-        <div class="col-md-12 span_3">
-		  <img src="/dry/dry/Public/admin/themes/images/1.png" width="100%">
-	    </div>
-	   
+    <link rel="stylesheet" type="text/css" href="/dry/dry/Public/admin/jqueryTreescroll/css/tree.css" />
+    <script type="text/javascript" src="/dry/dry/Public/admin/jqueryTreescroll/js/treescroll.min.js"></script>
+    <!-- <script type="text/javascript" src="/dry/dry/Public/admin/login/js/jquery-1.8.2.min.js"></script> -->
+    <div class="col-md-12 graphs">
+<div>
+    <a href="/dry/dry/admin.php/Assemblyscraprate/add">增加</a>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>年</td>
+            <td>月</td>
+            <td>target</td>
+            <td>Actual</td>
+        </tr>
+        <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$info): $mod = ($i % 2 );++$i;?><tr>
+                <td><?php echo ($info["asr_year"]); ?></td>
+                <td><?php echo ($info["asr_month"]); ?></td>
+                <td><?php echo ($info["target"]); ?></td>
+                <td><?php echo ($info["actual"]); ?></td>
+                <td><a href="/dry/dry/admin.php/Assemblyscraprate/update/id/<?php echo ($info["asr_id"]); ?>">更新</a>/<a href="/dry/dry/admin.php/Assemblyscraprate/del/id/<?php echo ($info["asr_id"]); ?>">删除</a></td>
+            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+    </table>
+</div>
+
+    </div>
+
 	   </div>
       <!-- /#page-wrapper -->
    </div>

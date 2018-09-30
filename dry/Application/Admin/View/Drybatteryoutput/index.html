@@ -1,0 +1,31 @@
+<extend name="Index/index" />
+
+<block name="content">
+    <load href="__PUBLIC__/admin/jqueryTreescroll/css/tree.css" />
+    <load href="__PUBLIC__/admin/jqueryTreescroll/js/treescroll.min.js" />
+    <!-- <load href="__PUBLIC__/admin/login/js/jquery-1.8.2.min.js" /> -->
+    <div class="col-md-12 graphs">
+<div>
+    <a href="__CONTROLLER__/add">增加</a>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>年</td>
+            <td>月</td>
+            <td>DUF</td>
+        </tr>
+        <volist name="info" id='info'>
+            <tr>
+                <td>{$info.dbo_year}</td>
+                <td>{$info.dbo_month}</td>
+                <td>{$info.duf}</td>
+
+                <td><a href="__CONTROLLER__/update/id/{$info.dbo_id}">更新</a>/<a href="__CONTROLLER__/del/id/{$info.dbo_id}">删除</a></td>
+            </tr>
+        </volist>
+    </table>
+</div>
+
+    </div>
+</block>

@@ -88,7 +88,7 @@ class PlateyieldController extends Controller
                 $py = D('plate_yield');
                 if ($py->create($_POST))
                 {
-                    $_POST['update_time'] = time();
+                    $_POST['edit_time'] = time();
                     $add = $py->where('py_id = '.$id)->save($_POST);
                     if ($add)
                     {

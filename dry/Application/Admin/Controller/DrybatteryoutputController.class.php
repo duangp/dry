@@ -10,11 +10,11 @@ namespace Admin\Controller;
 
 use think\Controller;
 
-class platescraprateController extends Controller
+class drybatteryoutputController extends Controller
 {
     public function index()
     {
-        $py = M('plate_scrap_rate');
+        $py = M('dry_battery_output');
         $info = $py->select();
         $this->assign("info",$info);
         $this->display();
@@ -25,7 +25,7 @@ class platescraprateController extends Controller
         if ($_POST)
         {
 
-            $py = D('plate_scrap_rate');
+            $py = D('dry_battery_output');
             if ($py->create($_POST))
             {
                 $_POST['add_time'] = time();
@@ -55,27 +55,27 @@ class platescraprateController extends Controller
     {
         if ($id != '')
         {
-            $find_id = M('plate_scrap_rate')->where('psr_id = '.$id)->find();
+            $find_id = M('dry_battery_output')->where('dbo_id = '.$id)->find();
             if ($find_id)
             {
-                $del = M('plate_scrap_rate')->where('psr_id = '.$id)->delete();
+                $del = M('dry_battery_output')->where('dbo_id = '.$id)->delete();
                 if ($del)
                 {
-                    $this->success('删除成功','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+                    $this->success('删除成功','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
                 }
                 else
                 {
-                    $this->error('删除失败','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+                    $this->error('删除失败','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
                 }
             }
             else
             {
-                $this->error('记录不存在','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+                $this->error('记录不存在','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
             }
         }
         else
         {
-            $this->error('参数错误','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+            $this->error('参数错误','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
         }
     }
 
@@ -85,37 +85,37 @@ class platescraprateController extends Controller
         {
             if ($_POST)
             {
-                $py = D('plate_scrap_rate');
+                $py = D('dry_battery_output');
                 if ($py->create($_POST))
                 {
                     $_POST['edit_time'] = time();
-                    $add = $py->where('psr_id = '.$id)->save($_POST);
+                    $add = $py->where('dbo_id = '.$id)->save($_POST);
                     if ($add)
                     {
-                        $this->success('修改成功，返回上一页','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+                        $this->success('修改成功，返回上一页','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
                     }
                     else
                     {
-                        $this->error('修改失败，返回上一页','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+                        $this->error('修改失败，返回上一页','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
                     }
 
                 }
                 else
                 {
-                    $this->error($py->getError(),'http://localhost/dry/dry/admin.php/platescraprate/index',2);
+                    $this->error($py->getError(),'http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
                 }
             }
             else
             {
-                $py = M('plate_scrap_rate');
-                $info = $py->where('psr_id = '.$id)->find();
+                $py = M('dry_battery_output');
+                $info = $py->where('dbo_id = '.$id)->find();
                 $this->assign("info",$info);
                 $this->display();
             }
         }
         else
         {
-            $this->error('参数错误','http://localhost/dry/dry/admin.php/platescraprate/index',2);
+            $this->error('参数错误','http://localhost/dry/dry/admin.php/drybatteryoutput/index',2);
         }
     }
 
